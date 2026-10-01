@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="box2">
+    
+    <pose>0 0 1.5 0 0 0</pose>
+    <link name="red_bar_link"> 
+      <gravity>true</gravity>
+      <inertial>
+        <mass>100000.0</mass>
+        <inertia>
+          <ixx>1041.6</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>101041.6</iyy>
+          <iyz>0</iyz>
+          <izz>101666.6</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision1">
+        <geometry><box><size>11 1 0.5</size></box></geometry>
+      </collision>
+      <visual name="visual">
+        <geometry><box><size>11 1 0.5</size></box></geometry>
+        <material><ambient>1 0 0 1</ambient><diffuse>1 0 0 1</diffuse></material>
+      </visual>
+    </link>
+    <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
+      <topic>/cmd_vel_y</topic> 
+    </plugin>
+  </model>
+</sdf>

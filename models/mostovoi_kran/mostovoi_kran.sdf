@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="kopnyc">
+  <static>true</static>
+  <!-- колоны -->
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/kolona/kolona.sdf</uri>
+    <name>kolona1</name>
+    <pose>10 10 5 0 0 0</pose>
+  </include>
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/kolona/kolona.sdf</uri>
+    <pose>0 10 5 0 0 0</pose>
+    <name>kolona2</name>
+  </include>
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/kolona/kolona.sdf</uri>
+    <pose>10 -10 5 0 0 0</pose>
+    <name>kolona3</name>
+  </include>
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/kolona/kolona.sdf</uri>
+    <pose>0 -10 5 0 0 0</pose>
+    <name>kolona4</name>
+  </include>
+  <!-- балки -->
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/balka/balka.sdf</uri>
+    <pose>10 0 10.5 0 0 0</pose>
+    <name>balka1</name>
+  </include>
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/balka/balka.sdf</uri>
+    <pose>0 0 10.5 0 0 0</pose>
+    <name>balka2</name>
+  </include>
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/balka2/balka2.sdf</uri>
+    <pose>5 10 10.5 0 0 0</pose>
+    <name>balka3</name>
+  </include>
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/balka2/balka2.sdf</uri>
+    <pose>5 -10 10.5 0 0 0</pose>
+    <name>balka4</name>
+  </include>
+  <!-- камера  -->
+  <include>
+    <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/camera/camera.sdf</uri>
+    <name>camera1</name>
+    <pose>5 0 5.5 0 1.5708 0</pose>
+  </include>
+  <joint name="shtativ" type="fixed">
+    <parent>camera1::kopnyc</parent>
+    <child>kolona1::kolona</child>
+  </joint>
+  </model>
+</sdf>

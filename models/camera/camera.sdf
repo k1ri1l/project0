@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+  <sdf version="1.8">
+    <model name="camera">
+      <link name="kopnyc">
+        <visual name="visual">
+          <geometry><box><size>0.1 0.1 0.1</size></box></geometry>
+          <material><ambient>0.2 0.2 0.2 1</ambient><diffuse>0.2 0.2 0.2 1</diffuse></material>
+        </visual>
+        <sensor type="camera" name="camera1">
+        <update_rate>30.0</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+
+        <topic>camera/image_raw</topic>
+
+        <camera name="camera1">
+          <horizontal_fov>2.3962634</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.2</near>
+            <far>100.0</far>
+          </clip>
+        </camera>
+      </sensor>
+      </link>
+      
+    </model>
+  </sdf>

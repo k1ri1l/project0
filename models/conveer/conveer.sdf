@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="box">
+    <static>true</static>
+    <pose>0 0 0.2 0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <mass>10.0</mass>
+        <inertia>
+          <ixx>0.166667</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.166667</iyy>
+          <iyz>0</iyz>
+          <izz>0.166667</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision1">
+        <geometry>
+          <box>
+            <size>5 1 0.4</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+            <bullet>
+              <friction>10.0</friction>
+              <friction2>10.0</friction2>
+            </bullet>
+            <ode>
+              <mu>100.0</mu>
+              <mu2>100.0</mu2>
+            </ode>
+          </friction>
+          <contact>
+            <ode>
+              <kp>1000000.0</kp> <!-- Жесткость поверхности (чтобы куб не микро-проваливался) -->
+              <kd>100.0</kd>     <!-- Демпфирование контактов -->
+              <min_depth>0.001</min_depth> <!-- Минимальная глубина проникновения для расчета сил -->
+            </ode>
+          </contact>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>5 1 0.4</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+        </material>
+      </visual>
+      <collision name="bort_left">
+        <pose>0 -0.6 0.4 0 0 0</pose>
+        <geometry><box><size>5 0.2 0.8</size></box></geometry>
+      </collision>
+      <visual name="visual_bort_left">
+        <pose>0 -0.6 0.4 0 0 0</pose>
+        <geometry><box><size>5 0.2 0.8</size></box></geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+        </material>
+      </visual>
+      <collision name="bort_right">
+        <pose>0 0.6 0.4 0 0 0</pose>
+        <geometry><box><size>5 0.2 0.8</size></box></geometry>
+      </collision>
+      <visual name="visual_bort_right">
+        <pose>0 0.6 0.4 0 0 0</pose>
+        <geometry><box><size>5 0.2 0.8</size></box></geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    <plugin
+        filename="gz-sim-track-controller-system"
+        name="gz::sim::systems::TrackController">
+        <link>body</link>
+        <velocity_topic>/conveyor/cmd_vel</velocity_topic>
+        
+    </plugin>
+  </model>
+</sdf>

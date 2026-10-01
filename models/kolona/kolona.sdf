@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="kolona">
+  <pose>0 0 0 0 0 0</pose>
+    <link name="kolona">
+      
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>1 1 10</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>1 1 10</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.2 0.2 0.2 1</ambient>
+          <diffuse>0.2 0.2 0.2 1</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="box">
+    
+    <pose>0 0 1.5 0 0 0</pose>
+    <link name="body">
+      <inertial>
+        <mass>100.0</mass>
+        <inertia>
+          <ixx>0.166667</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.166667</iyy>
+          <iyz>0</iyz>
+          <izz>0.166667</izz>
+        </inertia>
+      </inertial>
+      <gravity>true</gravity>
+      <kinematic>true</kinematic>
+      <collision name="collision_top">
+        <geometry><box><size>1 1.2 0.5</size></box></geometry>
+      </collision>
+      <visual name="visual_top">
+        <geometry><box><size>1 1.2 0.5</size></box></geometry>
+        <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+      </visual>
+      <collision name="collision_left">
+        <pose>0 0.55 -0.75 0 0 0</pose>
+        <geometry><box><size>1 0.1 1</size></box></geometry>
+      </collision>
+      <visual name="visual_left">
+        <pose>0 0.55 -0.75 0 0 0</pose>
+        <geometry><box><size>1 0.1 1</size></box></geometry>
+        <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+      </visual>
+      <collision name="collision_right">
+        <pose>0 -0.55 -0.75 0 0 0</pose>
+        <geometry><box><size>1 0.1 1</size></box></geometry>
+      </collision>
+      <visual name="visual_right">
+        <pose>0 -0.55 -0.75 0 0 0</pose>
+        <geometry><box><size>1 0.1 1</size></box></geometry>
+        <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+      </visual>
+      <collision name="collision_top1">
+        <pose>1 0.5 0 0 0 0</pose>
+        <geometry><box><size>1 2 0.5</size></box></geometry>
+      </collision>
+      <visual name="visual_top1">
+        <pose>1 0.5 0 0 0 0</pose>
+        <geometry><box><size>1 2 0.5</size></box></geometry>
+        <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+      </visual>
+      <collision name="collision_top2">
+        <pose>-1 0.5 0 0 0 0</pose>
+        <geometry><box><size>1 2 0.5</size></box></geometry>
+      </collision>
+      <visual name="visual_top2">
+        <pose>-1 0.5 0 0 0 0</pose>
+        <geometry><box><size>1 2 0.5</size></box></geometry>
+        <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+      </visual>
+      <collision name="collision_left2">
+        <pose>0 1.65 0 0 0 0</pose>
+        <geometry><box><size>1 0.3 0.5</size></box></geometry>
+      </collision>
+      <visual name="visual_left2">
+        <pose>0 1.65 0 0 0 0</pose>
+        <geometry><box><size>3 0.3 0.5</size></box></geometry>
+        <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+      </visual>
+      <collision name="collision_down">
+        <pose>0 0 -1 0 0 0</pose>
+        <geometry><box><size>1 1 0.5</size></box></geometry>
+      </collision>
+      <visual name="visual_down">
+        <pose>0 0 -1 0 0 0</pose>
+        <geometry><box><size>1 1 0.5</size></box></geometry>
+        <material><ambient>0 0 1 1</ambient><diffuse>0 0 1 1</diffuse></material>
+      </visual>
+    </link>
+    <plugin filename="gz-sim-velocity-control-system" name="gz::sim::systems::VelocityControl">
+      <topic>/cmd_vel</topic> 
+    </plugin>
+  </model>
+</sdf>

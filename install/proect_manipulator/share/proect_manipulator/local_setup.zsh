@@ -1,0 +1,1 @@
+/home/valerii/proect_manipulator/build/proect_manipulator/ament_cmake_environment_hooks/local_setup.zsh

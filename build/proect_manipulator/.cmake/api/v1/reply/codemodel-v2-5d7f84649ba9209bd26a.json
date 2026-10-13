@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f80661facd4809985625.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "proect_manipulator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cube_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cube_controller-a4eb58f808c1bb05e2bd.json",
+					"name" : "cube_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "gui_panel::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gui_panel-77d9d98b16b48dd94acb.json",
+					"name" : "gui_panel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "proect_manipulator_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-proect_manipulator_uninstall-4d5eb73dbd75ef36c462.json",
+					"name" : "proect_manipulator_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-f1c7b266412bffc19261.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_processor::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_processor-dfbef0bf6a85fd45b842.json",
+					"name" : "vision_processor",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/valerii/proect_manipulator/build/proect_manipulator",
+		"source" : "/home/valerii/proect_manipulator/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,128 @@
+[1.470s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'proect_manipulator', '--symlink-install', '--parallel-workers', '8']
+[1.470s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['proect_manipulator'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x75041d16b2f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x75041d16af90>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x75041d16af90>>)
+[1.943s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.944s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.945s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.945s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.945s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.947s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.947s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/valerii/proect_manipulator'
+[1.948s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.949s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.950s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.951s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.260s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.261s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.262s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.263s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.264s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.265s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.266s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.267s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.267s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.268s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.270s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.271s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.303s] DEBUG:colcon.colcon_core.package_identification:Package 'src' with type 'ros.ament_cmake' and name 'proect_manipulator'
+[2.303s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.304s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.530s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.530s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.555s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 321 installed packages in /opt/ros/jazzy
+[2.564s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.886s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'cmake_args' from command line to 'None'
+[2.886s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'cmake_target' from command line to 'None'
+[2.886s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.887s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'cmake_clean_cache' from command line to 'False'
+[2.887s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'cmake_clean_first' from command line to 'False'
+[2.887s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'cmake_force_configure' from command line to 'False'
+[2.887s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'ament_cmake_args' from command line to 'None'
+[2.887s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'catkin_cmake_args' from command line to 'None'
+[2.887s] Level 5:colcon.colcon_core.verb:set package 'proect_manipulator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.887s] DEBUG:colcon.colcon_core.verb:Building package 'proect_manipulator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/valerii/proect_manipulator/build/proect_manipulator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/valerii/proect_manipulator/install/proect_manipulator', 'merge_install': False, 'path': '/home/valerii/proect_manipulator/src', 'symlink_install': True, 'test_result_base': None}
+[2.888s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.897s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.897s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/valerii/proect_manipulator/src' with build type 'ament_cmake'
+[2.899s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/valerii/proect_manipulator/src'
+[2.931s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.932s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.933s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8
+[115.827s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8
+[115.987s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/valerii/proect_manipulator/build/proect_manipulator
+[116.220s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(proect_manipulator)
+[116.233s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/valerii/proect_manipulator/build/proect_manipulator
+[116.270s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator' for CMake module files
+[116.281s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator' for CMake config files
+[116.283s] Level 1:colcon.colcon_core.shell:create_environment_hook('proect_manipulator', 'cmake_prefix_path')
+[116.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/hook/cmake_prefix_path.ps1'
+[116.290s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/hook/cmake_prefix_path.dsv'
+[116.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/hook/cmake_prefix_path.sh'
+[116.307s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/lib'
+[116.309s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/bin'
+[116.311s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/lib/pkgconfig/proect_manipulator.pc'
+[116.319s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/lib/python3.12/site-packages'
+[116.322s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/bin'
+[116.325s] INFO:colcon.colcon_core.shell:Creating package script '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.ps1'
+[116.337s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.dsv'
+[116.340s] INFO:colcon.colcon_core.shell:Creating package script '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.sh'
+[116.347s] INFO:colcon.colcon_core.shell:Creating package script '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.bash'
+[116.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.zsh'
+[116.357s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valerii/proect_manipulator/install/proect_manipulator/share/colcon-core/packages/proect_manipulator)
+[116.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(proect_manipulator)
+[116.365s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator' for CMake module files
+[116.368s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator' for CMake config files
+[116.369s] Level 1:colcon.colcon_core.shell:create_environment_hook('proect_manipulator', 'cmake_prefix_path')
+[116.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/hook/cmake_prefix_path.ps1'
+[116.372s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/hook/cmake_prefix_path.dsv'
+[116.377s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/hook/cmake_prefix_path.sh'
+[116.383s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/lib'
+[116.384s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/bin'
+[116.384s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/lib/pkgconfig/proect_manipulator.pc'
+[116.386s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/lib/python3.12/site-packages'
+[116.388s] Level 1:colcon.colcon_core.environment:checking '/home/valerii/proect_manipulator/install/proect_manipulator/bin'
+[116.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.ps1'
+[116.397s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.dsv'
+[116.400s] INFO:colcon.colcon_core.shell:Creating package script '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.sh'
+[116.406s] INFO:colcon.colcon_core.shell:Creating package script '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.bash'
+[116.408s] INFO:colcon.colcon_core.shell:Creating package script '/home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.zsh'
+[116.414s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/valerii/proect_manipulator/install/proect_manipulator/share/colcon-core/packages/proect_manipulator)
+[116.417s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[116.427s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[116.432s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[116.433s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[116.861s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[116.863s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[116.863s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[116.864s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[116.865s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[116.870s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[116.872s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/valerii/proect_manipulator/install/local_setup.ps1'
+[116.876s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/valerii/proect_manipulator/install/_local_setup_util_ps1.py'
+[116.893s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/valerii/proect_manipulator/install/setup.ps1'
+[116.902s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/valerii/proect_manipulator/install/local_setup.sh'
+[116.907s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/valerii/proect_manipulator/install/_local_setup_util_sh.py'
+[116.913s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/valerii/proect_manipulator/install/setup.sh'
+[116.929s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/valerii/proect_manipulator/install/local_setup.bash'
+[116.932s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/valerii/proect_manipulator/install/setup.bash'
+[116.937s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/valerii/proect_manipulator/install/local_setup.zsh'
+[116.939s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/valerii/proect_manipulator/install/setup.zsh'

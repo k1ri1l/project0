@@ -1,0 +1,29 @@
+[0.068s] Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8
+[0.733s] [  8%] [32mBuilding CXX object CMakeFiles/cube_controller.dir/src/box_control.cpp.o[0m
+[0.759s] [ 25%] Built target vision_processor
+[0.826s] [ 91%] Built target gui_panel
+[95.397s] [100%] [32m[1mLinking CXX executable cube_controller[0m
+[100.981s] [100%] Built target cube_controller
+[101.070s] Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8
+[101.145s] Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/valerii/proect_manipulator/build/proect_manipulator
+[101.228s] -- Install configuration: ""
+[101.240s] -- Execute custom install script
+[101.253s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/cube_controller
+[101.257s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/gui_panel
+[101.260s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/vision_processor
+[101.261s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/package_run_dependencies/proect_manipulator
+[101.265s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/parent_prefix_path/proect_manipulator
+[101.265s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/ament_prefix_path.sh
+[101.267s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/ament_prefix_path.dsv
+[101.269s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/path.sh
+[101.272s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/path.dsv
+[101.274s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.bash
+[101.276s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.sh
+[101.278s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.zsh
+[101.279s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.dsv
+[101.280s] -- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.dsv
+[101.348s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/packages/proect_manipulator
+[101.350s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/cmake/proect_manipulatorConfig.cmake
+[101.352s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/cmake/proect_manipulatorConfig-version.cmake
+[101.353s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.xml
+[101.372s] Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/valerii/proect_manipulator/build/proect_manipulator

@@ -1,0 +1,1 @@
+Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8

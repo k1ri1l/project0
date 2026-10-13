@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="manipulator_V2">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    
+    <!-- Системные плагины мира -->
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-apply-link-wrench-system" name="gz::sim::systems::ApplyLinkWrench"/>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>false</cast_shadows>
+      <pose>10 10 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/ground/ground.sdf</uri>
+    </include>
+    
+    
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/mostovoi_kran/mostovoi_kran.sdf</uri>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/box/box.sdf</uri>
+      <pose>5.0 5.0 11.75 0 0 0</pose>
+      <name>box1</name>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/box2/box.sdf</uri>
+      <name>box2</name>
+      <pose>5.0 5.0 11.25 0 0 0</pose>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/box3/box.sdf</uri>
+      <name>box3</name>
+      <pose>5.0 0.0 1.0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/H-obraznya/box.sdf</uri>
+      <name>H-obraznya</name>
+      <pose>15.0 3.0 1.0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/cylinder/box.sdf</uri>
+      <name>cylinder</name>
+      <pose>15.0 6.0 1.0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/tryba/box.sdf</uri>
+      <name>tryba</name>
+      <pose>15.0 -6.0 1.0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/box4/box.sdf</uri>
+      <name>box4</name>
+      <pose>5 6.095 11.75 0 0 0</pose>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/T-obraznya/box.sdf</uri>
+      <name>T-obraznya</name>
+      <pose>15.0 -3.0 1.0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>/home/valerii/proect_manipulator/src/gazebo/worlds/conveer/conveer.sdf</uri>
+      <name>cobveer</name>
+      <pose>2 7 0.5 0 0 0</pose>
+    </include>
+  </world>
+</sdf>

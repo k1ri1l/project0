@@ -1,0 +1,31 @@
+[0.059s] Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8
+[0.357s] [  8%] [32mBuilding CXX object CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o[0m
+[0.381s] [ 83%] [32mBuilding CXX object CMakeFiles/cube_controller.dir/src/box_control.cpp.o[0m
+[0.384s] [ 83%] Built target gui_panel
+[61.501s] [ 91%] [32m[1mLinking CXX executable cube_controller[0m
+[64.695s] [ 91%] Built target cube_controller
+[72.839s] [100%] [32m[1mLinking CXX executable vision_processor[0m
+[78.316s] [100%] Built target vision_processor
+[78.514s] Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8
+[78.704s] Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/valerii/proect_manipulator/build/proect_manipulator
+[78.762s] -- Install configuration: ""
+[78.769s] -- Execute custom install script
+[78.777s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/cube_controller
+[78.779s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/gui_panel
+[78.780s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/vision_processor
+[78.782s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/package_run_dependencies/proect_manipulator
+[78.784s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/parent_prefix_path/proect_manipulator
+[78.787s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/ament_prefix_path.sh
+[78.788s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/ament_prefix_path.dsv
+[78.789s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/path.sh
+[78.791s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/path.dsv
+[78.792s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.bash
+[78.793s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.sh
+[78.795s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.zsh
+[78.795s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.dsv
+[78.796s] -- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.dsv
+[78.854s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/packages/proect_manipulator
+[78.855s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/cmake/proect_manipulatorConfig.cmake
+[78.856s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/cmake/proect_manipulatorConfig-version.cmake
+[78.857s] -- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.xml
+[78.878s] Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/valerii/proect_manipulator/build/proect_manipulator

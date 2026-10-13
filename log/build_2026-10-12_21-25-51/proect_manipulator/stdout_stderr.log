@@ -1,0 +1,3 @@
+[ 16%] Built target vision_processor
+[ 75%] [32mBuilding CXX object CMakeFiles/cube_controller.dir/src/box_control.cpp.o[0m
+[ 91%] Built target gui_panel

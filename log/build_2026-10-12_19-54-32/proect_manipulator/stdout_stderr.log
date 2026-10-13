@@ -1,0 +1,11 @@
+[  8%] [32mBuilding CXX object CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o[0m
+[ 25%] Built target cube_controller
+[ 91%] Built target gui_panel
+[01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K raspoznovanie[m[K()[m[K’:
+[01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:89:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kscalar[m[K’ was not declared in this scope; did you mean ‘[01m[Kschar[m[K’?
+   89 |   cv::inRange(HSV_frame, cv::Scalar(35, 30, 40),[01;31m[Kscalar[m[K(85,255,255),mask);
+      |                                                 [01;31m[K^~~~~~[m[K
+      |                                                 [32m[Kschar[m[K
+gmake[2]: *** [CMakeFiles/vision_processor.dir/build.make:76: CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/vision_processor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

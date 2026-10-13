@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/valerii/proect_manipulator/build/proect_manipulator/cube_controller" "/home/valerii/proect_manipulator/build/proect_manipulator/gui_panel" "/home/valerii/proect_manipulator/build/proect_manipulator/vision_processor" "TARGETS" "cube_controller" "gui_panel" "vision_processor" "DESTINATION" "lib/proect_manipulator")

@@ -1,0 +1,227 @@
+[0.000000] (-) TimerEvent: {}
+[0.002642] (proect_manipulator) JobQueued: {'identifier': 'proect_manipulator', 'dependencies': OrderedDict()}
+[0.003281] (proect_manipulator) JobStarted: {'identifier': 'proect_manipulator'}
+[0.031682] (proect_manipulator) JobProgress: {'identifier': 'proect_manipulator', 'progress': 'cmake'}
+[0.035465] (proect_manipulator) JobProgress: {'identifier': 'proect_manipulator', 'progress': 'build'}
+[0.037660] (proect_manipulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/valerii/proect_manipulator/build/proect_manipulator', '--', '-j8', '-l8'], 'cwd': '/home/valerii/proect_manipulator/build/proect_manipulator', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'MESA_D3D12_DEFAULT_ADAPTER_NAME': 'NVIDIA', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'valerii', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'MESA_LOADER_DRIVER_OVERRIDE': 'd3d12', 'GIT_ASKPASS': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/extensions/git/dist/askpass.sh', 'SHLVL': '0', 'LIBGL_ALWAYS_SOFTWARE': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/wsl/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/valerii', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-2eb76d77-920a-465b-9ca8-710187a44d6f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'GZ_RENDERING_ENGINE_NAME': 'ogre2', 'LOGNAME': 'valerii', 'NAME': 'DESKTOP-40NNMF3', 'WSL_INTEROP': '/run/WSL/360_interop', 'GZ_SIM_RENDER_ENGINE_PATH': '/opt/ros/jazzy/opt/gz_rendering_vendor/lib/gz-rendering-8/engine-plugins:', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'QT_API': 'pyqt5', 'QT_X11_NO_MITSHM': '1', 'PATH': '/home/valerii/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/valerii/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Microsoft/jdk-17.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Users/ADMIN/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/ADMIN/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/ADMIN/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ADMIN/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2022.1.3/bin:/mnt/c/Users/ADMIN/AppData/Local/Muse Hub/lib:/snap/bin', 'MITSHM': '0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-223efc6d14.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GALLIUM_DRIVER': 'd3d12', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_NONCE': 'ad6b0e42-8d93-4ebf-aeaf-57e7a06d9da8', 'PWD': '/home/valerii/proect_manipulator/build/proect_manipulator', 'QT_QPA_PLATFORM': 'xcb', 'COPILOT_DEBUG_NONCE': '3ea075239306f799ae5eb0576cc36b00', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'OGRE_RTT_MODE': 'Copy', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'GZ_SIM_PHYSICS_ENGINE_PATH': '/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins:', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.102706] (-) TimerEvent: {}
+[0.211067] (-) TimerEvent: {}
+[0.314330] (-) TimerEvent: {}
+[0.414616] (proect_manipulator) StdoutLine: {'line': b'[ 16%] Built target vision_processor\n'}
+[0.415222] (-) TimerEvent: {}
+[0.419580] (proect_manipulator) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/cube_controller.dir/src/box_control.cpp.o\x1b[0m\n'}
+[0.420132] (proect_manipulator) StdoutLine: {'line': b'[ 91%] Built target gui_panel\n'}
+[0.515930] (-) TimerEvent: {}
+[0.624096] (-) TimerEvent: {}
+[0.732846] (-) TimerEvent: {}
+[0.841274] (-) TimerEvent: {}
+[0.949990] (-) TimerEvent: {}
+[1.050783] (-) TimerEvent: {}
+[1.155702] (-) TimerEvent: {}
+[1.262923] (-) TimerEvent: {}
+[1.369689] (-) TimerEvent: {}
+[1.476856] (-) TimerEvent: {}
+[1.583805] (-) TimerEvent: {}
+[1.690888] (-) TimerEvent: {}
+[1.797855] (-) TimerEvent: {}
+[1.904552] (-) TimerEvent: {}
+[2.011208] (-) TimerEvent: {}
+[2.117951] (-) TimerEvent: {}
+[2.219385] (-) TimerEvent: {}
+[2.326035] (-) TimerEvent: {}
+[2.427773] (-) TimerEvent: {}
+[2.528541] (-) TimerEvent: {}
+[2.630219] (-) TimerEvent: {}
+[2.736755] (-) TimerEvent: {}
+[2.841267] (-) TimerEvent: {}
+[2.948524] (-) TimerEvent: {}
+[3.055734] (-) TimerEvent: {}
+[3.162611] (-) TimerEvent: {}
+[3.269700] (-) TimerEvent: {}
+[3.376514] (-) TimerEvent: {}
+[3.482872] (-) TimerEvent: {}
+[3.589184] (-) TimerEvent: {}
+[3.695626] (-) TimerEvent: {}
+[3.801939] (-) TimerEvent: {}
+[3.907489] (-) TimerEvent: {}
+[4.014414] (-) TimerEvent: {}
+[4.121957] (-) TimerEvent: {}
+[4.224157] (-) TimerEvent: {}
+[4.330635] (-) TimerEvent: {}
+[4.437864] (-) TimerEvent: {}
+[4.544903] (-) TimerEvent: {}
+[4.647831] (-) TimerEvent: {}
+[4.754038] (-) TimerEvent: {}
+[4.855302] (-) TimerEvent: {}
+[4.956168] (-) TimerEvent: {}
+[5.056909] (-) TimerEvent: {}
+[5.157620] (-) TimerEvent: {}
+[5.258307] (-) TimerEvent: {}
+[5.358797] (-) TimerEvent: {}
+[5.459398] (-) TimerEvent: {}
+[5.560090] (-) TimerEvent: {}
+[5.660741] (-) TimerEvent: {}
+[5.761660] (-) TimerEvent: {}
+[5.862757] (-) TimerEvent: {}
+[5.963613] (-) TimerEvent: {}
+[6.064738] (-) TimerEvent: {}
+[6.165527] (-) TimerEvent: {}
+[6.266191] (-) TimerEvent: {}
+[6.366808] (-) TimerEvent: {}
+[6.467643] (-) TimerEvent: {}
+[6.568641] (-) TimerEvent: {}
+[6.670018] (-) TimerEvent: {}
+[6.771064] (-) TimerEvent: {}
+[6.871838] (-) TimerEvent: {}
+[6.947441] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/valerii/proect_manipulator/src/src/box_control.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid CubeController::\x1b[01;32m\x1b[Kposition\x1b[m\x1b[K(geometry_msgs::msg::Point_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.947842] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/valerii/proect_manipulator/src/src/box_control.cpp:120:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<long int, std::ratio<1, 1000> >::duration(float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.948088] (proect_manipulator) StderrLine: {'line': b'  120 |     rclcpp::sleep_for(std::chrono::milliseconds(ms_y * ky\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[6.948289] (proect_manipulator) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.951304] (proect_manipulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/chrono:41\x1b[m\x1b[K,\n'}
+[6.952809] (proect_manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/valerii/proect_manipulator/src/src/box_control.cpp:1\x1b[m\x1b[K:\n'}
+[6.953069] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:581:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep2, class _Period2, class> constexpr std::chrono::duration<_Rep, _Period>::\x1b[01;32m\x1b[Kduration\x1b[m\x1b[K(const std::chrono::duration<_Rep, _Period>&) \x1b[35m\x1b[K[with _Period2 = _Rep2; <template-parameter-2-3> = _Period2; _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.953432] (proect_manipulator) StderrLine: {'line': b'  581 |           constexpr \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const duration<_Rep2, _Period2>& __d)\n'}
+[6.953723] (proect_manipulator) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.953903] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:581:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.954063] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/valerii/proect_manipulator/src/src/box_control.cpp:120:58:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.954260] (proect_manipulator) StderrLine: {'line': b'  120 |     rclcpp::sleep_for(std::chrono::milliseconds(ms_y * ky\x1b[01;36m\x1b[K)\x1b[m\x1b[K);\n'}
+[6.954368] (proect_manipulator) StderrLine: {'line': b'      |                                                          \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[6.954472] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:573:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep2, class> constexpr std::chrono::duration<_Rep, _Period>::\x1b[01;32m\x1b[Kduration\x1b[m\x1b[K(const _Rep2&) \x1b[35m\x1b[K[with <template-parameter-2-2> = _Rep2; _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.954582] (proect_manipulator) StderrLine: {'line': b'  573 |           constexpr explicit \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const _Rep2& __rep)\n'}
+[6.954683] (proect_manipulator) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.954784] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:573:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.958435] (proect_manipulator) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/ratio:39\x1b[m\x1b[K,\n'}
+[6.959137] (proect_manipulator) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:37\x1b[m\x1b[K:\n'}
+[6.959679] (proect_manipulator) StderrLine: {'line': b'/usr/include/c++/13/type_traits: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<bool _Cond, class _Tp> using std::__enable_if_t = typename std::enable_if::type \x1b[35m\x1b[K[with bool _Cond = false; _Tp = void]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.960204] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:2224:11:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class ... _Cond> using std::_Require = std::__enable_if_t<std::__and_<_Bn>::value> \x1b[35m\x1b[K[with _Cond = {std::is_convertible<const float&, long int>, std::__or_<std::chrono::treat_as_floating_point<long int>, std::__not_<std::chrono::treat_as_floating_point<float> > >}]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.960528] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:570:27:\x1b[m\x1b[K   required from here\n'}
+[6.960693] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/type_traits:116:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, void>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.960984] (proect_manipulator) StderrLine: {'line': b'  116 |     using \x1b[01;31m\x1b[K__enable_if_t\x1b[m\x1b[K = typename enable_if<_Cond, _Tp>::type;\n'}
+[6.961752] (proect_manipulator) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.962281] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:566:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::chrono::duration<_Rep, _Period>::\x1b[01;32m\x1b[Kduration\x1b[m\x1b[K(const std::chrono::duration<_Rep, _Period>&) \x1b[35m\x1b[K[with _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.962541] (proect_manipulator) StderrLine: {'line': b'  566 |         \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const duration&) = default;\n'}
+[6.963143] (proect_manipulator) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.963487] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:566:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<long int, std::ratio<1, 1000> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.964200] (proect_manipulator) StderrLine: {'line': b'  566 |         duration(\x1b[01;36m\x1b[Kconst duration&\x1b[m\x1b[K) = default;\n'}
+[6.964552] (proect_manipulator) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.964910] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:564:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<_Rep, _Period>::\x1b[01;32m\x1b[Kduration\x1b[m\x1b[K() \x1b[35m\x1b[K[with _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.965297] (proect_manipulator) StderrLine: {'line': b'  564 |         constexpr \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K() = default;\n'}
+[6.965658] (proect_manipulator) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.966606] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:564:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[6.966764] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/valerii/proect_manipulator/src/src/box_control.cpp:130:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<long int, std::ratio<1, 1000> >::duration(float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.966957] (proect_manipulator) StderrLine: {'line': b'  130 |     rclcpp::sleep_for(std::chrono::milliseconds(ms_x * kx\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[6.967123] (proect_manipulator) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.967298] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:581:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep2, class _Period2, class> constexpr std::chrono::duration<_Rep, _Period>::\x1b[01;32m\x1b[Kduration\x1b[m\x1b[K(const std::chrono::duration<_Rep, _Period>&) \x1b[35m\x1b[K[with _Period2 = _Rep2; <template-parameter-2-3> = _Period2; _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.967567] (proect_manipulator) StderrLine: {'line': b'  581 |           constexpr \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const duration<_Rep2, _Period2>& __d)\n'}
+[6.967722] (proect_manipulator) StderrLine: {'line': b'      |                     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.967855] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:581:21:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.968222] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/home/valerii/proect_manipulator/src/src/box_control.cpp:130:58:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<_Rep1, _Period1>\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.968955] (proect_manipulator) StderrLine: {'line': b'  130 |     rclcpp::sleep_for(std::chrono::milliseconds(ms_x * kx\x1b[01;36m\x1b[K)\x1b[m\x1b[K);\n'}
+[6.969510] (proect_manipulator) StderrLine: {'line': b'      |                                                          \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[6.969997] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:573:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Rep2, class> constexpr std::chrono::duration<_Rep, _Period>::\x1b[01;32m\x1b[Kduration\x1b[m\x1b[K(const _Rep2&) \x1b[35m\x1b[K[with <template-parameter-2-2> = _Rep2; _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.970523] (proect_manipulator) StderrLine: {'line': b'  573 |           constexpr explicit \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const _Rep2& __rep)\n'}
+[6.971089] (proect_manipulator) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.971605] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:573:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[6.971927] (-) TimerEvent: {}
+[6.972252] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:566:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr std::chrono::duration<_Rep, _Period>::\x1b[01;32m\x1b[Kduration\x1b[m\x1b[K(const std::chrono::duration<_Rep, _Period>&) \x1b[35m\x1b[K[with _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.972755] (proect_manipulator) StderrLine: {'line': b'  566 |         \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K(const duration&) = default;\n'}
+[6.973036] (proect_manipulator) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.973212] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:566:18:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::chrono::duration<long int, std::ratio<1, 1000> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.973431] (proect_manipulator) StderrLine: {'line': b'  566 |         duration(\x1b[01;36m\x1b[Kconst duration&\x1b[m\x1b[K) = default;\n'}
+[6.973569] (proect_manipulator) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.973675] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:564:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::chrono::duration<_Rep, _Period>::\x1b[01;32m\x1b[Kduration\x1b[m\x1b[K() \x1b[35m\x1b[K[with _Rep = long int; _Period = std::ratio<1, 1000>]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.973785] (proect_manipulator) StderrLine: {'line': b'  564 |         constexpr \x1b[01;36m\x1b[Kduration\x1b[m\x1b[K() = default;\n'}
+[6.973917] (proect_manipulator) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.974057] (proect_manipulator) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/bits/chrono.h:564:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[7.072233] (-) TimerEvent: {}
+[7.172946] (-) TimerEvent: {}
+[7.276143] (-) TimerEvent: {}
+[7.379878] (-) TimerEvent: {}
+[7.484601] (-) TimerEvent: {}
+[7.589462] (-) TimerEvent: {}
+[7.693864] (-) TimerEvent: {}
+[7.796447] (-) TimerEvent: {}
+[7.901246] (-) TimerEvent: {}
+[8.005733] (-) TimerEvent: {}
+[8.110310] (-) TimerEvent: {}
+[8.214950] (-) TimerEvent: {}
+[8.320355] (-) TimerEvent: {}
+[8.424864] (-) TimerEvent: {}
+[8.529750] (-) TimerEvent: {}
+[8.634564] (-) TimerEvent: {}
+[8.738813] (-) TimerEvent: {}
+[8.843761] (-) TimerEvent: {}
+[8.948501] (-) TimerEvent: {}
+[9.053065] (-) TimerEvent: {}
+[9.157684] (-) TimerEvent: {}
+[9.261936] (-) TimerEvent: {}
+[9.366304] (-) TimerEvent: {}
+[9.470947] (-) TimerEvent: {}
+[9.575607] (-) TimerEvent: {}
+[9.680523] (-) TimerEvent: {}
+[9.782705] (-) TimerEvent: {}
+[9.885299] (-) TimerEvent: {}
+[9.989700] (-) TimerEvent: {}
+[10.094175] (-) TimerEvent: {}
+[10.198888] (-) TimerEvent: {}
+[10.303881] (-) TimerEvent: {}
+[10.408703] (-) TimerEvent: {}
+[10.513352] (-) TimerEvent: {}
+[10.617838] (-) TimerEvent: {}
+[10.722514] (-) TimerEvent: {}
+[10.827425] (-) TimerEvent: {}
+[10.932421] (-) TimerEvent: {}
+[11.033115] (-) TimerEvent: {}
+[11.138681] (-) TimerEvent: {}
+[11.241848] (-) TimerEvent: {}
+[11.344635] (-) TimerEvent: {}
+[11.447826] (-) TimerEvent: {}
+[11.551064] (-) TimerEvent: {}
+[11.654800] (-) TimerEvent: {}
+[11.757463] (-) TimerEvent: {}
+[11.858798] (-) TimerEvent: {}
+[11.961764] (-) TimerEvent: {}
+[12.064562] (-) TimerEvent: {}
+[12.165642] (-) TimerEvent: {}
+[12.268432] (-) TimerEvent: {}
+[12.369297] (-) TimerEvent: {}
+[12.472828] (-) TimerEvent: {}
+[12.576211] (-) TimerEvent: {}
+[12.677228] (-) TimerEvent: {}
+[12.778083] (-) TimerEvent: {}
+[12.878743] (-) TimerEvent: {}
+[12.979413] (-) TimerEvent: {}
+[13.079932] (-) TimerEvent: {}
+[13.180515] (-) TimerEvent: {}
+[13.281285] (-) TimerEvent: {}
+[13.382234] (-) TimerEvent: {}
+[13.483348] (-) TimerEvent: {}
+[13.584589] (-) TimerEvent: {}
+[13.685512] (-) TimerEvent: {}
+[13.786194] (-) TimerEvent: {}
+[13.886791] (-) TimerEvent: {}
+[13.987343] (-) TimerEvent: {}
+[14.087871] (-) TimerEvent: {}
+[14.188439] (-) TimerEvent: {}
+[14.288966] (-) TimerEvent: {}
+[14.389565] (-) TimerEvent: {}
+[14.490280] (-) TimerEvent: {}
+[14.590825] (-) TimerEvent: {}
+[14.691463] (-) TimerEvent: {}
+[14.792130] (-) TimerEvent: {}
+[14.892770] (-) TimerEvent: {}
+[14.993487] (-) TimerEvent: {}
+[15.094189] (-) TimerEvent: {}
+[15.194835] (-) TimerEvent: {}
+[15.298856] (-) TimerEvent: {}
+[15.401556] (-) TimerEvent: {}
+[15.504396] (-) TimerEvent: {}
+[15.607620] (-) TimerEvent: {}
+[15.624796] (proect_manipulator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/cube_controller.dir/build.make:76: CMakeFiles/cube_controller.dir/src/box_control.cpp.o] Error 1\n'}
+[15.625758] (proect_manipulator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/cube_controller.dir/all] Error 2\n'}
+[15.626426] (proect_manipulator) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.636590] (proect_manipulator) CommandEnded: {'returncode': 2}
+[15.708173] (-) TimerEvent: {}
+[15.805998] (proect_manipulator) JobEnded: {'identifier': 'proect_manipulator', 'rc': 2}
+[15.808295] (-) TimerEvent: {}
+[15.817927] (-) EventReactorShutdown: {}

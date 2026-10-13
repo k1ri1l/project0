@@ -1,0 +1,13 @@
+[0.114s] Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8
+[1.105s] [  8%] [32mBuilding CXX object CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o[0m
+[1.106s] [ 25%] Built target cube_controller
+[1.121s] [ 91%] Built target gui_panel
+[50.804s] [01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K raspoznovanie[m[K()[m[K’:
+[50.804s] [01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:89:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kscalar[m[K’ was not declared in this scope; did you mean ‘[01m[Kschar[m[K’?
+[50.805s]    89 |   cv::inRange(HSV_frame, cv::Scalar(35, 30, 40),[01;31m[Kscalar[m[K(85,255,255),mask);
+[50.806s]       |                                                 [01;31m[K^~~~~~[m[K
+[50.807s]       |                                                 [32m[Kschar[m[K
+[123.479s] gmake[2]: *** [CMakeFiles/vision_processor.dir/build.make:76: CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o] Error 1
+[123.481s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/vision_processor.dir/all] Error 2
+[123.483s] gmake: *** [Makefile:146: all] Error 2
+[123.506s] Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8

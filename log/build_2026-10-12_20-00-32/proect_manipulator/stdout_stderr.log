@@ -1,0 +1,25 @@
+[ 16%] Built target cube_controller
+[ 25%] [32mBuilding CXX object CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o[0m
+[ 91%] Built target gui_panel
+[100%] [32m[1mLinking CXX executable vision_processor[0m
+[100%] Built target vision_processor
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/cube_controller
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/gui_panel
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/vision_processor
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/package_run_dependencies/proect_manipulator
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/parent_prefix_path/proect_manipulator
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/ament_prefix_path.sh
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/ament_prefix_path.dsv
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/path.sh
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/path.dsv
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.bash
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.sh
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.zsh
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.dsv
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.dsv
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/packages/proect_manipulator
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/cmake/proect_manipulatorConfig.cmake
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/cmake/proect_manipulatorConfig-version.cmake
+-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.xml

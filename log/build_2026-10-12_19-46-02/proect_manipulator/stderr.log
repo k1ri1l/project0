@@ -1,0 +1,13 @@
+[01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K raspoznovanie[m[K()[m[K’:
+[01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:89:14:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kvoid cv::[01;32m[KinRange[m[K(InputArray, InputArray, InputArray, OutputArray)[m[K’
+   89 |   [01;31m[Kcv::inRange(HSV_frame, cv::Scalar(35, 30, 40))[m[K;
+      |   [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/core.hpp:1429:19:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1429 | CV_EXPORTS_W void [01;36m[KinRange[m[K(InputArray src, InputArray lowerb,
+      |                   [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/vision_processor.dir/build.make:76: CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/vision_processor.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

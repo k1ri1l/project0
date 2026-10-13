@@ -1,0 +1,19 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "remote.SSH.remotePlatform": {
+        "10.157.169.104": "linux",
+        "172.31.33.104": "linux",
+        "10.124.213.104": "linux",
+        "10.68.182.104": "linux",
+        "10.216.51.104": "linux",
+        "10.50.45.104": "linux",
+        "10.254.107.104": "linux",
+        "10.60.6.104": "linux",
+        "10.23.178.104": "linux"
+    },
+    "explorer.confirmDelete": false,
+    "workbench.editor.empty.hint": "hidden",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "remote.autoForwardPortsSource": "hybrid",
+    "cmake.sourceDirectory": "/home/valerii/proect_manipulator/src"
+}

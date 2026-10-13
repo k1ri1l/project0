@@ -1,0 +1,8 @@
+source;share/proect_manipulator/hook/cmake_prefix_path.ps1
+source;share/proect_manipulator/hook/cmake_prefix_path.dsv
+source;share/proect_manipulator/hook/cmake_prefix_path.sh
+source;share/proect_manipulator/local_setup.bash
+source;share/proect_manipulator/local_setup.dsv
+source;share/proect_manipulator/local_setup.ps1
+source;share/proect_manipulator/local_setup.sh
+source;share/proect_manipulator/local_setup.zsh

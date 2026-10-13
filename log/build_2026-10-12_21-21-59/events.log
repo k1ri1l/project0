@@ -1,0 +1,347 @@
+[0.000000] (-) TimerEvent: {}
+[0.001769] (proect_manipulator) JobQueued: {'identifier': 'proect_manipulator', 'dependencies': OrderedDict()}
+[0.002059] (proect_manipulator) JobStarted: {'identifier': 'proect_manipulator'}
+[0.020452] (proect_manipulator) JobProgress: {'identifier': 'proect_manipulator', 'progress': 'cmake'}
+[0.022233] (proect_manipulator) JobProgress: {'identifier': 'proect_manipulator', 'progress': 'build'}
+[0.023519] (proect_manipulator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/valerii/proect_manipulator/build/proect_manipulator', '--', '-j8', '-l8'], 'cwd': '/home/valerii/proect_manipulator/build/proect_manipulator', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'MESA_D3D12_DEFAULT_ADAPTER_NAME': 'NVIDIA', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'valerii', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'MESA_LOADER_DRIVER_OVERRIDE': 'd3d12', 'GIT_ASKPASS': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/extensions/git/dist/askpass.sh', 'SHLVL': '0', 'LIBGL_ALWAYS_SOFTWARE': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/wsl/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/valerii', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-7fcc69d7-a4c8-4174-9c63-5a08aecbeae9.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'GZ_RENDERING_ENGINE_NAME': 'ogre2', 'LOGNAME': 'valerii', 'NAME': 'DESKTOP-40NNMF3', 'WSL_INTEROP': '/run/WSL/360_interop', 'GZ_SIM_RENDER_ENGINE_PATH': '/opt/ros/jazzy/opt/gz_rendering_vendor/lib/gz-rendering-8/engine-plugins:', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'QT_API': 'pyqt5', 'QT_X11_NO_MITSHM': '1', 'PATH': '/home/valerii/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/valerii/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Microsoft/jdk-17.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Users/ADMIN/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/ADMIN/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/ADMIN/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ADMIN/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2022.1.3/bin:/mnt/c/Users/ADMIN/AppData/Local/Muse Hub/lib:/snap/bin', 'MITSHM': '0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-223efc6d14.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GALLIUM_DRIVER': 'd3d12', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_NONCE': 'ad6b0e42-8d93-4ebf-aeaf-57e7a06d9da8', 'PWD': '/home/valerii/proect_manipulator/build/proect_manipulator', 'QT_QPA_PLATFORM': 'xcb', 'COPILOT_DEBUG_NONCE': '3ea075239306f799ae5eb0576cc36b00', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'OGRE_RTT_MODE': 'Copy', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'GZ_SIM_PHYSICS_ENGINE_PATH': '/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins:', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[0.097722] (-) TimerEvent: {}
+[0.161417] (proect_manipulator) StdoutLine: {'line': b'[ 41%] Built target vision_processor\n'}
+[0.162049] (proect_manipulator) StdoutLine: {'line': b'[ 83%] Built target gui_panel\n'}
+[0.170719] (proect_manipulator) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/cube_controller.dir/src/box_control.cpp.o\x1b[0m\n'}
+[0.197954] (-) TimerEvent: {}
+[0.298930] (-) TimerEvent: {}
+[0.399938] (-) TimerEvent: {}
+[0.500913] (-) TimerEvent: {}
+[0.601783] (-) TimerEvent: {}
+[0.702687] (-) TimerEvent: {}
+[0.803549] (-) TimerEvent: {}
+[0.904169] (-) TimerEvent: {}
+[1.004776] (-) TimerEvent: {}
+[1.105284] (-) TimerEvent: {}
+[1.205879] (-) TimerEvent: {}
+[1.306500] (-) TimerEvent: {}
+[1.407179] (-) TimerEvent: {}
+[1.507859] (-) TimerEvent: {}
+[1.608442] (-) TimerEvent: {}
+[1.709052] (-) TimerEvent: {}
+[1.809776] (-) TimerEvent: {}
+[1.910917] (-) TimerEvent: {}
+[2.012017] (-) TimerEvent: {}
+[2.112770] (-) TimerEvent: {}
+[2.213291] (-) TimerEvent: {}
+[2.314003] (-) TimerEvent: {}
+[2.414922] (-) TimerEvent: {}
+[2.516010] (-) TimerEvent: {}
+[2.617831] (-) TimerEvent: {}
+[2.727257] (-) TimerEvent: {}
+[2.837114] (-) TimerEvent: {}
+[2.944358] (-) TimerEvent: {}
+[3.053318] (-) TimerEvent: {}
+[3.157757] (-) TimerEvent: {}
+[3.260665] (-) TimerEvent: {}
+[3.366711] (-) TimerEvent: {}
+[3.473512] (-) TimerEvent: {}
+[3.580370] (-) TimerEvent: {}
+[3.687185] (-) TimerEvent: {}
+[3.794092] (-) TimerEvent: {}
+[3.901126] (-) TimerEvent: {}
+[4.008151] (-) TimerEvent: {}
+[4.114954] (-) TimerEvent: {}
+[4.222237] (-) TimerEvent: {}
+[4.329307] (-) TimerEvent: {}
+[4.435521] (-) TimerEvent: {}
+[4.539897] (-) TimerEvent: {}
+[4.645942] (-) TimerEvent: {}
+[4.752445] (-) TimerEvent: {}
+[4.859001] (-) TimerEvent: {}
+[4.966020] (-) TimerEvent: {}
+[5.072582] (-) TimerEvent: {}
+[5.176393] (-) TimerEvent: {}
+[5.283029] (-) TimerEvent: {}
+[5.389572] (-) TimerEvent: {}
+[5.495629] (-) TimerEvent: {}
+[5.601951] (-) TimerEvent: {}
+[5.708102] (-) TimerEvent: {}
+[5.814627] (-) TimerEvent: {}
+[5.921111] (-) TimerEvent: {}
+[6.027979] (-) TimerEvent: {}
+[6.128721] (-) TimerEvent: {}
+[6.231808] (-) TimerEvent: {}
+[6.337897] (-) TimerEvent: {}
+[6.444990] (-) TimerEvent: {}
+[6.548455] (-) TimerEvent: {}
+[6.655619] (-) TimerEvent: {}
+[6.758475] (-) TimerEvent: {}
+[6.861649] (-) TimerEvent: {}
+[6.964445] (-) TimerEvent: {}
+[7.067330] (-) TimerEvent: {}
+[7.168318] (-) TimerEvent: {}
+[7.273575] (-) TimerEvent: {}
+[7.378418] (-) TimerEvent: {}
+[7.480049] (-) TimerEvent: {}
+[7.584652] (-) TimerEvent: {}
+[7.689413] (-) TimerEvent: {}
+[7.792689] (-) TimerEvent: {}
+[7.895576] (-) TimerEvent: {}
+[7.998445] (-) TimerEvent: {}
+[8.100586] (-) TimerEvent: {}
+[8.203198] (-) TimerEvent: {}
+[8.305085] (-) TimerEvent: {}
+[8.408275] (-) TimerEvent: {}
+[8.511041] (-) TimerEvent: {}
+[8.613879] (-) TimerEvent: {}
+[8.716864] (-) TimerEvent: {}
+[8.817814] (-) TimerEvent: {}
+[8.918672] (-) TimerEvent: {}
+[9.019909] (-) TimerEvent: {}
+[9.121015] (-) TimerEvent: {}
+[9.221948] (-) TimerEvent: {}
+[9.322920] (-) TimerEvent: {}
+[9.423761] (-) TimerEvent: {}
+[9.524412] (-) TimerEvent: {}
+[9.624934] (-) TimerEvent: {}
+[9.725589] (-) TimerEvent: {}
+[9.826165] (-) TimerEvent: {}
+[9.926741] (-) TimerEvent: {}
+[10.027374] (-) TimerEvent: {}
+[10.128082] (-) TimerEvent: {}
+[10.228893] (-) TimerEvent: {}
+[10.330230] (-) TimerEvent: {}
+[10.430942] (-) TimerEvent: {}
+[10.531794] (-) TimerEvent: {}
+[10.632272] (-) TimerEvent: {}
+[10.734568] (-) TimerEvent: {}
+[10.837104] (-) TimerEvent: {}
+[10.939733] (-) TimerEvent: {}
+[11.042415] (-) TimerEvent: {}
+[11.145700] (-) TimerEvent: {}
+[11.252177] (-) TimerEvent: {}
+[11.359078] (-) TimerEvent: {}
+[11.460881] (-) TimerEvent: {}
+[11.563520] (-) TimerEvent: {}
+[11.666396] (-) TimerEvent: {}
+[11.769178] (-) TimerEvent: {}
+[11.872304] (-) TimerEvent: {}
+[11.974932] (-) TimerEvent: {}
+[12.077643] (-) TimerEvent: {}
+[12.180634] (-) TimerEvent: {}
+[12.281769] (-) TimerEvent: {}
+[12.384060] (-) TimerEvent: {}
+[12.487053] (-) TimerEvent: {}
+[12.589991] (-) TimerEvent: {}
+[12.691621] (-) TimerEvent: {}
+[12.794823] (-) TimerEvent: {}
+[12.897205] (-) TimerEvent: {}
+[12.999536] (-) TimerEvent: {}
+[13.102400] (-) TimerEvent: {}
+[13.208458] (-) TimerEvent: {}
+[13.311784] (-) TimerEvent: {}
+[13.420567] (-) TimerEvent: {}
+[13.529410] (-) TimerEvent: {}
+[13.638342] (-) TimerEvent: {}
+[13.747265] (-) TimerEvent: {}
+[13.856047] (-) TimerEvent: {}
+[13.964666] (-) TimerEvent: {}
+[14.073318] (-) TimerEvent: {}
+[14.181179] (-) TimerEvent: {}
+[14.284860] (-) TimerEvent: {}
+[14.386459] (-) TimerEvent: {}
+[14.487893] (-) TimerEvent: {}
+[14.592371] (-) TimerEvent: {}
+[14.696878] (-) TimerEvent: {}
+[14.801669] (-) TimerEvent: {}
+[14.906908] (-) TimerEvent: {}
+[15.011324] (-) TimerEvent: {}
+[15.113744] (-) TimerEvent: {}
+[15.218445] (-) TimerEvent: {}
+[15.323639] (-) TimerEvent: {}
+[15.428335] (-) TimerEvent: {}
+[15.532861] (-) TimerEvent: {}
+[15.637330] (-) TimerEvent: {}
+[15.742008] (-) TimerEvent: {}
+[15.844174] (-) TimerEvent: {}
+[15.948738] (-) TimerEvent: {}
+[16.049808] (-) TimerEvent: {}
+[16.150717] (-) TimerEvent: {}
+[16.251698] (-) TimerEvent: {}
+[16.354168] (-) TimerEvent: {}
+[16.455188] (-) TimerEvent: {}
+[16.556089] (-) TimerEvent: {}
+[16.656863] (-) TimerEvent: {}
+[16.757654] (-) TimerEvent: {}
+[16.858595] (-) TimerEvent: {}
+[16.959298] (-) TimerEvent: {}
+[17.060035] (-) TimerEvent: {}
+[17.160591] (-) TimerEvent: {}
+[17.261078] (-) TimerEvent: {}
+[17.361687] (-) TimerEvent: {}
+[17.462409] (-) TimerEvent: {}
+[17.563084] (-) TimerEvent: {}
+[17.663876] (-) TimerEvent: {}
+[17.764506] (-) TimerEvent: {}
+[17.865162] (-) TimerEvent: {}
+[17.965860] (-) TimerEvent: {}
+[18.066486] (-) TimerEvent: {}
+[18.167156] (-) TimerEvent: {}
+[18.268092] (-) TimerEvent: {}
+[18.368979] (-) TimerEvent: {}
+[18.469937] (-) TimerEvent: {}
+[18.571007] (-) TimerEvent: {}
+[18.672014] (-) TimerEvent: {}
+[18.773156] (-) TimerEvent: {}
+[18.877895] (-) TimerEvent: {}
+[18.982797] (-) TimerEvent: {}
+[19.087551] (-) TimerEvent: {}
+[19.191879] (-) TimerEvent: {}
+[19.296340] (-) TimerEvent: {}
+[19.401105] (-) TimerEvent: {}
+[19.506440] (-) TimerEvent: {}
+[19.611121] (-) TimerEvent: {}
+[19.715306] (-) TimerEvent: {}
+[19.819670] (-) TimerEvent: {}
+[19.924093] (-) TimerEvent: {}
+[20.028942] (-) TimerEvent: {}
+[20.130659] (-) TimerEvent: {}
+[20.235360] (-) TimerEvent: {}
+[20.340002] (-) TimerEvent: {}
+[20.444904] (-) TimerEvent: {}
+[20.549753] (-) TimerEvent: {}
+[20.654295] (-) TimerEvent: {}
+[20.758976] (-) TimerEvent: {}
+[20.862197] (-) TimerEvent: {}
+[20.967295] (-) TimerEvent: {}
+[21.068177] (-) TimerEvent: {}
+[21.172255] (-) TimerEvent: {}
+[21.276813] (-) TimerEvent: {}
+[21.381530] (-) TimerEvent: {}
+[21.486063] (-) TimerEvent: {}
+[21.590620] (-) TimerEvent: {}
+[21.695771] (-) TimerEvent: {}
+[21.800285] (-) TimerEvent: {}
+[21.905061] (-) TimerEvent: {}
+[22.009534] (-) TimerEvent: {}
+[22.110194] (-) TimerEvent: {}
+[22.216645] (-) TimerEvent: {}
+[22.323908] (-) TimerEvent: {}
+[22.428198] (-) TimerEvent: {}
+[22.535058] (-) TimerEvent: {}
+[22.641840] (-) TimerEvent: {}
+[22.748442] (-) TimerEvent: {}
+[22.854809] (-) TimerEvent: {}
+[22.961371] (-) TimerEvent: {}
+[23.067942] (-) TimerEvent: {}
+[23.175293] (-) TimerEvent: {}
+[23.282594] (-) TimerEvent: {}
+[23.383623] (-) TimerEvent: {}
+[23.489672] (-) TimerEvent: {}
+[23.596573] (-) TimerEvent: {}
+[23.703005] (-) TimerEvent: {}
+[23.809685] (-) TimerEvent: {}
+[23.916299] (-) TimerEvent: {}
+[24.023392] (-) TimerEvent: {}
+[24.127474] (-) TimerEvent: {}
+[24.228768] (-) TimerEvent: {}
+[24.329793] (-) TimerEvent: {}
+[24.430654] (-) TimerEvent: {}
+[24.531225] (-) TimerEvent: {}
+[24.631845] (-) TimerEvent: {}
+[24.732430] (-) TimerEvent: {}
+[24.833079] (-) TimerEvent: {}
+[24.933698] (-) TimerEvent: {}
+[25.034335] (-) TimerEvent: {}
+[25.134941] (-) TimerEvent: {}
+[25.235581] (-) TimerEvent: {}
+[25.336207] (-) TimerEvent: {}
+[25.436893] (-) TimerEvent: {}
+[25.537523] (-) TimerEvent: {}
+[25.638189] (-) TimerEvent: {}
+[25.738846] (-) TimerEvent: {}
+[25.839486] (-) TimerEvent: {}
+[25.940038] (-) TimerEvent: {}
+[26.040592] (-) TimerEvent: {}
+[26.141140] (-) TimerEvent: {}
+[26.242101] (-) TimerEvent: {}
+[26.343191] (-) TimerEvent: {}
+[26.444200] (-) TimerEvent: {}
+[26.545158] (-) TimerEvent: {}
+[26.645906] (-) TimerEvent: {}
+[26.746630] (-) TimerEvent: {}
+[26.847270] (-) TimerEvent: {}
+[26.953907] (-) TimerEvent: {}
+[27.060679] (-) TimerEvent: {}
+[27.164137] (-) TimerEvent: {}
+[27.266839] (-) TimerEvent: {}
+[27.368821] (-) TimerEvent: {}
+[27.471915] (-) TimerEvent: {}
+[27.575157] (-) TimerEvent: {}
+[27.678083] (-) TimerEvent: {}
+[27.781001] (-) TimerEvent: {}
+[27.883821] (-) TimerEvent: {}
+[27.986846] (-) TimerEvent: {}
+[28.088765] (-) TimerEvent: {}
+[28.191953] (-) TimerEvent: {}
+[28.295022] (-) TimerEvent: {}
+[28.396308] (-) TimerEvent: {}
+[28.497432] (-) TimerEvent: {}
+[28.600411] (-) TimerEvent: {}
+[28.702430] (-) TimerEvent: {}
+[28.804506] (-) TimerEvent: {}
+[28.907077] (-) TimerEvent: {}
+[29.010478] (-) TimerEvent: {}
+[29.112370] (-) TimerEvent: {}
+[29.213124] (-) TimerEvent: {}
+[29.315834] (-) TimerEvent: {}
+[29.417048] (-) TimerEvent: {}
+[29.475889] (proect_manipulator) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cube_controller\x1b[0m\n'}
+[29.517300] (-) TimerEvent: {}
+[29.618092] (-) TimerEvent: {}
+[29.721244] (-) TimerEvent: {}
+[29.823966] (-) TimerEvent: {}
+[29.926222] (-) TimerEvent: {}
+[30.029073] (-) TimerEvent: {}
+[30.130345] (-) TimerEvent: {}
+[30.234742] (-) TimerEvent: {}
+[30.339226] (-) TimerEvent: {}
+[30.444042] (-) TimerEvent: {}
+[30.549559] (-) TimerEvent: {}
+[30.654265] (-) TimerEvent: {}
+[30.758706] (-) TimerEvent: {}
+[30.863050] (-) TimerEvent: {}
+[30.967722] (-) TimerEvent: {}
+[31.068499] (-) TimerEvent: {}
+[31.169597] (-) TimerEvent: {}
+[31.271551] (-) TimerEvent: {}
+[31.374157] (-) TimerEvent: {}
+[31.476235] (-) TimerEvent: {}
+[31.578234] (-) TimerEvent: {}
+[31.681374] (-) TimerEvent: {}
+[31.784734] (-) TimerEvent: {}
+[31.885548] (-) TimerEvent: {}
+[31.897942] (proect_manipulator) StdoutLine: {'line': b'[100%] Built target cube_controller\n'}
+[31.929008] (proect_manipulator) CommandEnded: {'returncode': 0}
+[31.930676] (proect_manipulator) JobProgress: {'identifier': 'proect_manipulator', 'progress': 'install'}
+[31.952783] (proect_manipulator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/valerii/proect_manipulator/build/proect_manipulator'], 'cwd': '/home/valerii/proect_manipulator/build/proect_manipulator', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'MESA_D3D12_DEFAULT_ADAPTER_NAME': 'NVIDIA', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'valerii', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'MESA_LOADER_DRIVER_OVERRIDE': 'd3d12', 'GIT_ASKPASS': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/extensions/git/dist/askpass.sh', 'SHLVL': '0', 'LIBGL_ALWAYS_SOFTWARE': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/wsl/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/valerii', 'TERM_PROGRAM_VERSION': '1.141.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-7fcc69d7-a4c8-4174-9c63-5a08aecbeae9.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/node', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WSL_DISTRO_NAME': 'Ubuntu-24.04', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'GZ_RENDERING_ENGINE_NAME': 'ogre2', 'LOGNAME': 'valerii', 'NAME': 'DESKTOP-40NNMF3', 'WSL_INTEROP': '/run/WSL/360_interop', 'GZ_SIM_RENDER_ENGINE_PATH': '/opt/ros/jazzy/opt/gz_rendering_vendor/lib/gz-rendering-8/engine-plugins:', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'QT_API': 'pyqt5', 'QT_X11_NO_MITSHM': '1', 'PATH': '/home/valerii/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/valerii/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/valerii/.vscode-server/bin/2a59476c9bfcb90b3ddc372c36762471b7dfad1c/bin/remote-cli:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Microsoft/jdk-17.0.12.7-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Users/ADMIN/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/ADMIN/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/ADMIN/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/ADMIN/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm 2022.1.3/bin:/mnt/c/Users/ADMIN/AppData/Local/Muse Hub/lib:/snap/bin', 'MITSHM': '0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-223efc6d14.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GALLIUM_DRIVER': 'd3d12', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_NONCE': 'ad6b0e42-8d93-4ebf-aeaf-57e7a06d9da8', 'PWD': '/home/valerii/proect_manipulator/build/proect_manipulator', 'QT_QPA_PLATFORM': 'xcb', 'COPILOT_DEBUG_NONCE': '3ea075239306f799ae5eb0576cc36b00', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib/python:/opt/ros/jazzy/opt/sdformat_vendor/lib/python:/opt/ros/jazzy/opt/gz_transport_vendor/lib/python:/opt/ros/jazzy/opt/gz_msgs_vendor/lib/python:/opt/ros/jazzy/opt/gz_math_vendor/lib/python:/opt/ros/jazzy/lib/python3.12/site-packages', 'OGRE_RTT_MODE': 'Copy', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'GZ_SIM_PHYSICS_ENGINE_PATH': '/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins:', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WSLENV': 'VSCODE_WSL_EXT_LOCATION/up'}), 'shell': False}
+[31.976567] (proect_manipulator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.979434] (proect_manipulator) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[31.981300] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/cube_controller\n'}
+[31.981995] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/gui_panel\n'}
+[31.982377] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/lib/proect_manipulator/vision_processor\n'}
+[31.982791] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/package_run_dependencies/proect_manipulator\n'}
+[31.983242] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/parent_prefix_path/proect_manipulator\n'}
+[31.983919] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/ament_prefix_path.sh\n'}
+[31.984370] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/ament_prefix_path.dsv\n'}
+[31.984736] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/path.sh\n'}
+[31.985222] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/environment/path.dsv\n'}
+[31.985794] (-) TimerEvent: {}
+[31.986186] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.bash\n'}
+[31.986599] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.sh\n'}
+[31.986912] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.zsh\n'}
+[31.987041] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/local_setup.dsv\n'}
+[31.987231] (proect_manipulator) StdoutLine: {'line': b'-- Symlinking: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.dsv\n'}
+[32.012580] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/ament_index/resource_index/packages/proect_manipulator\n'}
+[32.013548] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/cmake/proect_manipulatorConfig.cmake\n'}
+[32.014307] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/cmake/proect_manipulatorConfig-version.cmake\n'}
+[32.014853] (proect_manipulator) StdoutLine: {'line': b'-- Up-to-date symlink: /home/valerii/proect_manipulator/install/proect_manipulator/share/proect_manipulator/package.xml\n'}
+[32.018471] (proect_manipulator) CommandEnded: {'returncode': 0}
+[32.067528] (proect_manipulator) JobEnded: {'identifier': 'proect_manipulator', 'rc': 0}
+[32.069959] (-) EventReactorShutdown: {}

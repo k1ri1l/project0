@@ -1,0 +1,98 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+        "tasks": [
+            {
+            "label": "compilation",
+            "type": "shell",
+            "command": "source /opt/ros/jazzy/setup.bash && colcon build --packages-select proect_manipulator --symlink-install --parallel-workers $(nproc)",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+            },
+            {
+             "label": "1. Build and Run Gazebo",
+            "type": "shell",
+            "command": "killall -9 ruby gz_sim_server gz; rm -rf /tmp/gz-* && rm -rf ~/.gz/sim/ && export GZ_RENDERING_BACKEND=ogre && rm -rf ~/.gz/sim/ && rm -rf ~/.gz/ && rm -rf ~/.ogre* && source /opt/ros/jazzy/setup.bash && [ -f install/setup.bash ] && source install/setup.bash  && ros2 launch src/gazebo/gazebo_activate.py",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "GZ_SIM_PHYSICS_ENGINE_PATH": "/opt/ros/jazzy/opt/gz_physics_vendor/lib/gz-physics-7/engine-plugins",
+                    "GZ_SIM_RENDER_ENGINE_PATH": "/opt/ros/jazzy/opt/gz_rendering_vendor/lib/gz-rendering-8/engine-plugins",
+                    "LD_LIBRARY_PATH": "/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/usr/lib/x86_64-linux-gnu",
+                    "GZ_RENDERING_ENGINE_NAME": "ogre2",
+                    "QT_API": "pyqt5",
+                    "QT_QPA_PLATFORM": "xcb",
+                    "LIBGL_ALWAYS_SOFTWARE": "1",
+                    "XDG_RUNTIME_DIR": "/tmp/runtime-valerii"
+                }
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+            },
+            {
+            "label": "2. Run Cube Controller",
+            "type": "shell",
+            "command": "source /opt/ros/jazzy/setup.bash && source install/setup.bash && ros2 run proect_manipulator cube_controller",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+            },
+            {
+            "label": "3. Run GUI Panel",
+            "type": "shell",
+            "command": "source /opt/ros/jazzy/setup.bash && source install/setup.bash && ros2 run proect_manipulator gui_panel",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+            },
+            {
+            "label": "4. Run Vision Processor",
+            "type": "shell",
+            "command": "source /opt/ros/jazzy/setup.bash && source install/setup.bash && ros2 run proect_manipulator vision_processor",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+            },
+            {
+            "label": "Запустить ВСЁ вместе",
+            "type": "shell",
+            "command": "echo 'Все ноды запущены в отдельных терминалах!'",
+            "dependsOrder": "parallel", 
+            "dependsOn": [
+                "1. Build and Run Gazebo", // Сначала компилируем и открываем симулятор
+                "2. Run Cube Controller",  // Затем стартует контроллер в своей вкладке
+                "3. Run GUI Panel",         // И следом — ваше неактивное окно
+                "4. Run Vision Processor"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+            }
+    ]
+}

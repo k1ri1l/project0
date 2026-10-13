@@ -1,0 +1,12 @@
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/uninstall.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/proect_manipulator_uninstall.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/cube_controller.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/gui_panel.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/vision_processor.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/test.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/edit_cache.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/rebuild_cache.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/list_install_components.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/install.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/install/local.dir
+/home/valerii/proect_manipulator/build/proect_manipulator/CMakeFiles/install/strip.dir

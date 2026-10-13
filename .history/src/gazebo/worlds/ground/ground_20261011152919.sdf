@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <model name="ground">
+    <static>true</static>
+    <link name="body">
+      <collision name="collision1">
+        <geometry>
+          <plane>
+            <size>100 100</size>
+            <normal>0 0 1</normal>
+          </plane>
+        </geometry>
+      </collision>
+      <visual name="visual1">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>100 100</size>
+          </plane> 
+        </geometry>
+        <material>
+          <ambient>0.9 0.9 0.9 1</ambient> <!-- Светло-серый цвет -->
+          <diffuse>0.9 0.9 0.9 1</diffuse>
+          <specular>0.9 0.9 0.9 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

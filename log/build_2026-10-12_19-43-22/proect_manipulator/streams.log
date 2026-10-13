@@ -1,0 +1,4 @@
+[0.210s] Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/valerii/proect_manipulator/src -j8 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/valerii/proect_manipulator/install/proect_manipulator
+[0.330s] [0mCMake Error: Unknown argument -j8[0m
+[0.331s] [0mCMake Error: Run 'cmake --help' for all supported options.[0m
+[0.343s] Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/valerii/proect_manipulator/src -j8 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/valerii/proect_manipulator/install/proect_manipulator

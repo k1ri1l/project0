@@ -1,0 +1,91 @@
+[0.100s] Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/valerii/proect_manipulator/src -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/valerii/proect_manipulator/install/proect_manipulator
+[1.936s] -- The C compiler identification is GNU 13.3.0
+[6.958s] -- The CXX compiler identification is GNU 13.3.0
+[11.263s] -- Detecting C compiler ABI info
+[13.352s] -- Detecting C compiler ABI info - done
+[13.435s] -- Check for working C compiler: /usr/bin/cc - skipped
+[13.450s] -- Detecting C compile features
+[13.460s] -- Detecting C compile features - done
+[14.194s] -- Detecting CXX compiler ABI info
+[16.504s] -- Detecting CXX compiler ABI info - done
+[16.565s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[16.568s] -- Detecting CXX compile features
+[16.573s] -- Detecting CXX compile features - done
+[16.655s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[18.074s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[18.819s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[19.365s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[20.890s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[21.117s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[21.453s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[21.708s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[22.724s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[22.758s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[23.714s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[25.145s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[25.948s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[27.699s] -- Found geometry_msgs: 5.3.8 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[28.064s] -- Looking for gz-transport13 -- found version 13.6.0
+[28.181s] -- Searching for dependencies of gz-transport13
+[40.449s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.21.12") 
+[47.585s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[47.623s] -- Checking for module 'libzmq >= 4'
+[47.747s] --   Found libzmq, version 4.3.5
+[48.153s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[48.479s] -- Checking for module 'uuid'
+[48.603s] --   Found uuid, version 2.39.3
+[48.893s] -- Found UUID: TRUE  
+[48.923s] -- Looking for gz-utils2 -- found version 2.2.1
+[48.925s] -- Searching for dependencies of gz-utils2
+[48.932s] -- Searching for <gz-utils2> component [cli]
+[48.957s] -- Looking for gz-utils2-cli -- found version 2.2.1
+[48.960s] -- Searching for dependencies of gz-utils2-cli
+[48.996s] -- Looking for gz-msgs10 -- found version 10.4.0
+[48.997s] -- Searching for dependencies of gz-msgs10
+[56.669s] -- Looking for gz-utils2 -- found version 2.2.1
+[56.686s] -- Looking for gz-math7 -- found version 7.7.0
+[56.689s] -- Searching for dependencies of gz-math7
+[56.698s] -- Looking for gz-utils2 -- found version 2.2.1
+[56.752s] -- Checking for module 'tinyxml2'
+[56.964s] --   Found tinyxml2, version 10.0.0
+[57.348s] -- Found ros_gz_interfaces: 1.0.24 (/opt/ros/jazzy/share/ros_gz_interfaces/cmake)
+[57.668s] -- Looking for gz-msgs10 -- found version 10.4.0
+[57.690s] -- Found PkgConfig: /usr/bin/pkg-config (found version "1.8.1") 
+[57.696s] -- Checking for module 'glfw3'
+[57.810s] --   Found glfw3, version 3.3.10
+[62.652s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+[62.703s] -- Found sensor_msgs: 5.3.8 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[63.039s] -- Found cv_bridge: 4.1.0 (/opt/ros/jazzy/share/cv_bridge/cmake)
+[63.245s] -- Found OpenCV: /usr (found version "4.6.0") 
+[66.472s] -- Configuring done (66.3s)
+[67.235s] -- Generating done (0.4s)
+[67.387s] -- Build files have been written to: /home/valerii/proect_manipulator/build/proect_manipulator
+[67.981s] Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/valerii/proect_manipulator/src -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/valerii/proect_manipulator/install/proect_manipulator
+[68.029s] Invoking command in '/home/valerii/proect_manipulator/build/proect_manipulator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8
+[68.932s] [  8%] [32mBuilding CXX object CMakeFiles/gui_panel.dir/ImGui/imgui_tables.cpp.o[0m
+[68.954s] [ 16%] [32mBuilding CXX object CMakeFiles/gui_panel.dir/ImGui/imgui_widgets.cpp.o[0m
+[68.966s] [ 25%] [32mBuilding CXX object CMakeFiles/gui_panel.dir/ImGui/imgui_impl_glfw.cpp.o[0m
+[69.043s] [ 41%] [32mBuilding CXX object CMakeFiles/gui_panel.dir/ImGui/imgui_draw.cpp.o[0m
+[69.059s] [ 50%] [32mBuilding CXX object CMakeFiles/gui_panel.dir/src/statistica.cpp.o[0m
+[69.060s] [ 50%] [32mBuilding CXX object CMakeFiles/cube_controller.dir/src/box_control.cpp.o[0m
+[69.075s] [ 58%] [32mBuilding CXX object CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o[0m
+[69.142s] [ 66%] [32mBuilding CXX object CMakeFiles/gui_panel.dir/ImGui/imgui.cpp.o[0m
+[76.434s] [ 75%] [32mBuilding CXX object CMakeFiles/gui_panel.dir/ImGui/imgui_impl_opengl3.cpp.o[0m
+[146.957s] [01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K raspoznovanie[m[K()[m[K’:
+[146.992s] [01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:89:14:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kvoid cv::[01;32m[KinRange[m[K(InputArray, InputArray, InputArray, OutputArray)[m[K’
+[146.993s]    89 |   [01;31m[Kcv::inRange(HSV_frame, cv::Scalar(35, 30, 40))[m[K;
+[146.994s]       |   [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[146.995s] In file included from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[146.997s]                  from [01m[K/home/valerii/proect_manipulator/src/src/raspoznovanie.cpp:1[m[K:
+[146.999s] [01m[K/usr/include/opencv4/opencv2/core.hpp:1429:19:[m[K [01;36m[Knote: [m[Kdeclared here
+[147.000s]  1429 | CV_EXPORTS_W void [01;36m[KinRange[m[K(InputArray src, InputArray lowerb,
+[147.001s]       |                   [01;36m[K^~~~~~~[m[K
+[279.918s] gmake[2]: *** [CMakeFiles/vision_processor.dir/build.make:76: CMakeFiles/vision_processor.dir/src/raspoznovanie.cpp.o] Error 1
+[279.930s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/vision_processor.dir/all] Error 2
+[279.931s] gmake[1]: *** Waiting for unfinished jobs....
+[389.752s] [ 83%] [32m[1mLinking CXX executable cube_controller[0m
+[396.192s] [ 83%] Built target cube_controller
+[413.581s] [ 91%] [32m[1mLinking CXX executable gui_panel[0m
+[429.630s] [ 91%] Built target gui_panel
+[429.683s] gmake: *** [Makefile:146: all] Error 2
+[430.064s] Invoked command in '/home/valerii/proect_manipulator/build/proect_manipulator' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/valerii/proect_manipulator/build/proect_manipulator -- -j8 -l8

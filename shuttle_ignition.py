@@ -221,8 +221,8 @@ class ShuttleNode(Node):
         return [goal_w]
 
     def is_cliff_detected(self):
-        if self.rz > 0.30 and self.rx > 4.4:
-            if self.cliff_l > 0.22 or self.cliff_r > 0.22 or self.cliff_l < 0.10 or self.cliff_r < 0.10:
+        if self.rz > 0.32 and self.rx > 4.8:
+            if self.cliff_l > 0.25 or self.cliff_r > 0.25 or self.cliff_l < 0.10 or self.cliff_r < 0.10:
                 return True
             if self.ry > 0:
                 if self.rx > 6.30 or self.ry > 4.30 or self.ry < 2.70:
@@ -236,19 +236,18 @@ class ShuttleNode(Node):
         now = time.time()
         final_x, final_y = target_list[-1] if isinstance(target_list, list) else target_list
 
-        if math.hypot(final_x - self.rx, final_y - self.ry) < 0.25:
+        if math.hypot(final_x - self.rx, final_y - self.ry) < 0.20:
             return True
 
         if use_astar:
-            if not self.path or (now - self.last_plan_time > 0.8): # Реже перестраиваем маршрут, чтобы не дергался
+            if not self.path or (now - self.last_plan_time > 1.0):
                 self.path = self.astar((self.rx, self.ry), (final_x, final_y))
                 self.last_plan_time = now
             target_path = self.path
         else:
             target_path = [target_list] if not isinstance(target_list, list) else target_list
 
-        # Увеличен lookahead до 0.85 м для гладкого движения по дуге без виляния
-        lookahead = 0.85
+        lookahead = 0.90
         wp_x, wp_y = target_path[-1]
         for px, py in target_path:
             if math.hypot(px - self.rx, py - self.ry) >= lookahead:
@@ -264,13 +263,39 @@ class ShuttleNode(Node):
         yaw_err = math.atan2(math.sin(target_yaw - self.yaw), math.cos(target_yaw - self.yaw))
 
         cmd = Twist()
-        base_speed = 0.55 if abs(self.pitch) > 0.05 else 0.75
-        if self.min_front_dist < 0.40:
-            base_speed *= 0.3
+        base_speed = 0.60 if abs(self.pitch) > 0.05 else 0.80
 
-        # Мягкий коэффициент поворота (1.2 вместо 2.2), исключающий перекладку руля и зигзаги
-        cmd.linear.x = base_speed * max(0.4, 1.0 - abs(yaw_err) * 0.5)
-        cmd.angular.z = max(-1.2, min(1.2, 1.3 * yaw_err))
+        cmd.linear.x = base_speed * max(0.5, 1.0 - abs(yaw_err) * 0.4)
+        cmd.angular.z = max(-1.0, min(1.0, 1.1 * yaw_err))
+
+        self.pub_cmd.publish(cmd)
+        return False
+
+    def drive_ramp_straight(self, target_x, center_y):
+        """Прямолинейный заход и движение по пандусу без пересчета сетки (абсолютно ровно)"""
+        dx = target_x - self.rx
+        dy_to_center = center_y - self.ry
+        
+        if abs(dx) < 0.15:
+            return True
+
+        desired_yaw = 0.0 if dx > 0 else math.pi
+        # Жесткая коррекция по оси Y пандуса
+        y_corr = max(-0.25, min(0.25, 1.2 * dy_to_center))
+        if dx > 0:
+            desired_yaw += y_corr
+        else:
+            desired_yaw -= y_corr
+
+        yaw_err = math.atan2(math.sin(desired_yaw - self.yaw), math.cos(desired_yaw - self.yaw))
+
+        cmd = Twist()
+        if abs(yaw_err) > 0.20:
+            cmd.linear.x = 0.0
+            cmd.angular.z = max(-1.2, min(1.2, 2.0 * yaw_err))
+        else:
+            cmd.linear.x = 0.45 if abs(self.pitch) > 0.05 else 0.65
+            cmd.angular.z = max(-0.8, min(0.8, 1.5 * yaw_err))
 
         self.pub_cmd.publish(cmd)
         return False
@@ -297,10 +322,10 @@ class ShuttleNode(Node):
             return
 
         if self.state == 'TO_APPROACH_A':
-            if self.follow_path((0.8, 3.5), use_astar=True):
+            if self.follow_path((1.0, 3.5), use_astar=True):
                 self.state = 'CLIMB_A'
         elif self.state == 'CLIMB_A':
-            if self.follow_path([(3.0, 3.5), (5.5, 3.5)], use_astar=False):
+            if self.drive_ramp_straight(5.5, 3.5):
                 self.state = 'WAIT_A'
                 self.wait_until = now + 2.0
         elif self.state == 'WAIT_A':
@@ -308,14 +333,14 @@ class ShuttleNode(Node):
             if now >= self.wait_until:
                 self.state = 'DESCEND_A'
         elif self.state == 'DESCEND_A':
-            if self.follow_path([(3.0, 3.5), (0.8, 3.5)], use_astar=False):
+            if self.drive_ramp_straight(1.0, 3.5):
                 self.state = 'TO_APPROACH_B'
 
         elif self.state == 'TO_APPROACH_B':
-            if self.follow_path((0.8, -3.5), use_astar=True):
+            if self.follow_path((1.0, -3.5), use_astar=True):
                 self.state = 'CLIMB_B'
         elif self.state == 'CLIMB_B':
-            if self.follow_path([(3.0, -3.5), (5.5, -3.5)], use_astar=False):
+            if self.drive_ramp_straight(5.5, -3.5):
                 self.state = 'WAIT_B'
                 self.wait_until = now + 2.0
         elif self.state == 'WAIT_B':
@@ -323,13 +348,13 @@ class ShuttleNode(Node):
             if now >= self.wait_until:
                 self.state = 'DESCEND_B'
         elif self.state == 'DESCEND_B':
-            if self.follow_path([(3.0, -3.5), (0.8, -3.5)], use_astar=False):
+            if self.drive_ramp_straight(1.0, -3.5):
                 self.state = 'TO_APPROACH_A'
 
         elif self.state == 'TO_HOME':
             if self.rx > 1.2 and abs(self.ry) > 2.0:
                 cy = 3.5 if self.ry > 0 else -3.5
-                self.follow_path((0.8, cy), use_astar=False)
+                self.drive_ramp_straight(1.0, cy)
             else:
                 if self.follow_path((-5.5, 0.0), use_astar=True):
                     self.state = 'IDLE'
@@ -360,7 +385,7 @@ def main():
     node = ShuttleNode()
 
     root = tk.Tk()
-    root.title("Пульт управления челноком (Плавный Pure Pursuit)")
+    root.title("Пульт управления челноком (Прямолинейный заход на пандус)")
     root.resizable(False, False)
 
     bf = tk.Frame(root)

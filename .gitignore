@@ -1,5 +1,5 @@
-.venv/
-__pycache__/
-*.py[cod]
-aruco_detector.log
 build/
+install/
+log/
+__pycache__/
+*.pyc

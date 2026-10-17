@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="default">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="ignition-gazebo-physics-system" name="ignition::gazebo::systems::Physics"/>
+    <plugin filename="ignition-gazebo-user-commands-system" name="ignition::gazebo::systems::UserCommands"/>
+    <plugin filename="ignition-gazebo-scene-broadcaster-system" name="ignition::gazebo::systems::SceneBroadcaster"/>
+    <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="c"><geometry><plane><normal>0 0 1</normal><size>25 25</size></plane></geometry></collision>
+        <visual name="v"><geometry><plane><normal>0 0 1</normal><size>25 25</size></plane></geometry></visual>
+      </link>
+    </model>
+
+    <!-- ВНЕШНИЙ ПЕРИМЕТР (10х10 м) -->
+    <model name="wall_n"><static>true</static><pose>0 5 0.5 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>10 0.2 1</size></box></geometry></collision><visual name="v"><geometry><box><size>10 0.2 1</size></box></geometry></visual></link></model>
+    <model name="wall_s"><static>true</static><pose>0 -5 0.5 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>10 0.2 1</size></box></geometry></collision><visual name="v"><geometry><box><size>10 0.2 1</size></box></geometry></visual></link></model>
+    <model name="wall_e"><static>true</static><pose>5 0 0.5 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>0.2 10 1</size></box></geometry></collision><visual name="v"><geometry><box><size>0.2 10 1</size></box></geometry></visual></link></model>
+    <model name="wall_w"><static>true</static><pose>-5 0 0.5 0 0 0</pose><link name="l"><collision name="c"><geometry><box><size>0.2 10 1</size></box></geometry></collision><visual name="v"><geometry><box><size>0.2 10 1</size></box></geometry></visual></link></model>
+
+    <!-- СТАНЦИЯ 1: БАЗА (Синяя платформа) -->
+    <model name="station_base">
+      <static>true</static>
+      <pose>-3.2 -3.2 0.005 0 0 0</pose>
+      <link name="pad"><visual name="v"><geometry><box><size>1.3 1.3 0.01</size></box></geometry><material><ambient>0.1 0.4 1 1</ambient><diffuse>0.1 0.4 1 1</diffuse></material></visual></link>
+      <link name="beacon"><pose>-0.75 -0.75 0.5 0 0 0</pose><collision name="c"><geometry><cylinder><radius>0.08</radius><length>1.0</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.08</radius><length>1.0</length></cylinder></geometry><material><ambient>0.1 0.4 1 1</ambient><diffuse>0.1 0.4 1 1</diffuse></material></visual></link>
+    </model>
+
+    <!-- СТАНЦИЯ 2: РАЗГРУЗКА 1 (Зеленая платформа) -->
+    <model name="station_unload1">
+      <static>true</static>
+      <pose>3.2 -3.2 0.005 0 0 0</pose>
+      <link name="pad"><visual name="v"><geometry><box><size>1.3 1.3 0.01</size></box></geometry><material><ambient>0.1 0.9 0.2 1</ambient><diffuse>0.1 0.9 0.2 1</diffuse></material></visual></link>
+      <link name="beacon"><pose>0.75 -0.75 0.5 0 0 0</pose><collision name="c"><geometry><cylinder><radius>0.08</radius><length>1.0</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.08</radius><length>1.0</length></cylinder></geometry><material><ambient>0.1 0.9 0.2 1</ambient><diffuse>0.1 0.9 0.2 1</diffuse></material></visual></link>
+    </model>
+
+    <!-- СТАНЦИЯ 3: РАЗГРУЗКА 2 (Оранжевая платформа) -->
+    <model name="station_unload2">
+      <static>true</static>
+      <pose>2.5 3.2 0.005 0 0 0</pose>
+      <link name="pad"><visual name="v"><geometry><box><size>1.3 1.3 0.01</size></box></geometry><material><ambient>1 0.6 0 1</ambient><diffuse>1 0.6 0 1</diffuse></material></visual></link>
+      <link name="beacon"><pose>0.75 0.75 0.5 0 0 0</pose><collision name="c"><geometry><cylinder><radius>0.08</radius><length>1.0</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.08</radius><length>1.0</length></cylinder></geometry><material><ambient>1 0.6 0 1</ambient><diffuse>1 0.6 0 1</diffuse></material></visual></link>
+    </model>
+
+    <!-- === ПРЕПЯТСТВИЯ: СТЕНЫ И БАРЬЕРЫ === -->
+    <model name="barrier_1"><static>true</static><pose>0 -2.2 0.5 0 0 0.5</pose>
+      <link name="l"><collision name="c"><geometry><box><size>2.2 0.25 1</size></box></geometry></collision><visual name="v"><geometry><box><size>2.2 0.25 1</size></box></geometry><material><ambient>0.7 0.3 0.3 1</ambient></material></visual></link>
+    </model>
+
+    <model name="barrier_center"><static>true</static><pose>0.2 0.4 0.5 0 0 1.57</pose>
+      <link name="l"><collision name="c"><geometry><box><size>2.0 0.25 1</size></box></geometry></collision><visual name="v"><geometry><box><size>2.0 0.25 1</size></box></geometry><material><ambient>0.7 0.3 0.3 1</ambient></material></visual></link>
+    </model>
+
+    <model name="barrier_top"><static>true</static><pose>-1.2 2.6 0.5 0 0 -0.4</pose>
+      <link name="l"><collision name="c"><geometry><box><size>2.0 0.25 1</size></box></geometry></collision><visual name="v"><geometry><box><size>2.0 0.25 1</size></box></geometry><material><ambient>0.7 0.3 0.3 1</ambient></material></visual></link>
+    </model>
+
+    <model name="barrier_diag"><static>true</static><pose>1.8 1.2 0.5 0 0 0.9</pose>
+      <link name="l"><collision name="c"><geometry><box><size>1.6 0.25 1</size></box></geometry></collision><visual name="v"><geometry><box><size>1.6 0.25 1</size></box></geometry><material><ambient>0.7 0.3 0.3 1</ambient></material></visual></link>
+    </model>
+
+    <!-- === ПРЕПЯТСТВИЯ: КУБЫ И БЛОКИ === -->
+    <model name="box_center"><static>true</static><pose>-1.2 -0.8 0.4 0 0 0.2</pose>
+      <link name="l"><collision name="c"><geometry><box><size>1.0 1.0 0.8</size></geometry></collision><visual name="v"><geometry><box><size>1.0 1.0 0.8</size></geometry><material><ambient>0.8 0.5 0.2 1</ambient></material></visual></link>
+    </model>
+
+    <model name="box_east"><static>true</static><pose>1.5 -1.2 0.4 0 0 0</pose>
+      <link name="l"><collision name="c"><geometry><box><size>0.8 0.8 0.8</size></geometry></collision><visual name="v"><geometry><box><size>0.8 0.8 0.8</size></geometry><material><ambient>0.8 0.5 0.2 1</ambient></material></visual></link>
+    </model>
+
+    <model name="box_west"><static>true</static><pose>-2.6 0.8 0.4 0 0 0.4</pose>
+      <link name="l"><collision name="c"><geometry><box><size>0.9 0.7 0.8</size></geometry></collision><visual name="v"><geometry><box><size>0.9 0.7 0.8</size></geometry><material><ambient>0.8 0.5 0.2 1</ambient></material></visual></link></model>
+
+    <model name="box_near_u1"><static>true</static><pose>3.2 -1.0 0.4 0 0 0</pose>
+      <link name="l"><collision name="c"><geometry><box><size>0.7 0.7 0.8</size></geometry></collision><visual name="v"><geometry><box><size>0.7 0.7 0.8</size></geometry><material><ambient>0.8 0.5 0.2 1</ambient></material></visual></link>
+    </model>
+
+    <!-- === ПРЕПЯТСТВИЯ: ЦИЛИНДРИЧЕСКИЕ КОЛОННЫ === -->
+    <model name="col_1"><static>true</static><pose>-1.0 1.2 0.5 0 0 0</pose>
+      <link name="l"><collision name="c"><geometry><cylinder><radius>0.4</radius><length>1</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.4</radius><length>1</length></cylinder></geometry><material><ambient>0.3 0.6 0.8 1</ambient></material></visual></link>
+    </model>
+
+    <model name="col_2"><static>true</static><pose>0.8 3.0 0.5 0 0 0</pose>
+      <link name="l"><collision name="c"><geometry><cylinder><radius>0.35</radius><length>1</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.35</radius><length>1</length></cylinder></geometry><material><ambient>0.3 0.6 0.8 1</ambient></material></visual></link>
+    </model>
+
+    <model name="col_3"><static>true</static><pose>-0.5 -3.5 0.5 0 0 0</pose>
+      <link name="l"><collision name="c"><geometry><cylinder><radius>0.35</radius><length>1</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.35</radius><length>1</length></cylinder></geometry><material><ambient>0.3 0.6 0.8 1</ambient></material></visual></link>
+    </model>
+
+    <model name="col_4"><static>true</static><pose>3.0 1.5 0.5 0 0 0</pose>
+      <link name="l"><collision name="c"><geometry><cylinder><radius>0.3</radius><length>1</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.3</radius><length>1</length></cylinder></geometry><material><ambient>0.3 0.6 0.8 1</ambient></material></visual></link>
+    </model>
+
+    <!-- САМА МАШИНКА (На синей базе) -->
+    <model name="low_poly_bot">
+      <pose>-3.2 -3.2 0.08 0 0 0</pose>
+      <link name="base_footprint"/>
+      <joint name="base_footprint_joint" type="fixed"><parent>base_footprint</parent><child>base_link</child></joint>
+
+      <link name="base_link">
+        <pose>0 0 0.05 0 0 0</pose>
+        <inertial><mass>2.5</mass><inertia><ixx>0.011</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.028</iyy><iyz>0</iyz><izz>0.036</izz></inertia></inertial>
+        <collision name="c"><geometry><box><size>0.36 0.22 0.08</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.36 0.22 0.08</size></box></geometry><material><ambient>0.2 0.5 0.9 1</ambient><diffuse>0.2 0.5 0.9 1</diffuse></material></visual>
+      </link>
+
+      <link name="laser_frame">
+        <pose>0.06 0 0.12 0 0 0</pose>
+        <inertial><mass>0.12</mass><inertia><ixx>0.00005</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.00005</iyy><iyz>0</iyz><izz>0.00007</izz></inertia></inertial>
+        <collision name="c"><geometry><cylinder><radius>0.035</radius><length>0.04</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.035</radius><length>0.04</length></cylinder></geometry><material><ambient>0.9 0.1 0.1 1</ambient><diffuse>0.9 0.1 0.1 1</diffuse></material></visual>
+        <sensor name="lidar" type="gpu_lidar">
+          <always_on>true</always_on><visualize>true</visualize><update_rate>15</update_rate><topic>scan</topic>
+          <ray>
+            <scan><horizontal><samples>360</samples><resolution>1</resolution><min_angle>-3.14159</min_angle><max_angle>3.14159</max_angle></horizontal></scan>
+            <range><min>0.12</min><max>8.0</max><resolution>0.01</resolution></range>
+          </ray>
+        </sensor>
+      </link>
+      <joint name="laser_joint" type="fixed"><parent>base_link</parent><child>laser_frame</child></joint>
+
+      <link name="front_left_wheel"><pose>0.12 0.13 0.04 -1.5708 0 0</pose><inertial><mass>0.2</mass><inertia><ixx>0.00014</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.00014</iyy><iyz>0</iyz><izz>0.00025</izz></inertia></inertial><collision name="c"><geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry></visual></link>
+      <joint name="front_left_wheel_joint" type="revolute"><parent>base_link</parent><child>front_left_wheel</child><axis><xyz>0 0 1</xyz></axis></joint>
+
+      <link name="front_right_wheel"><pose>0.12 -0.13 0.04 -1.5708 0 0</pose><inertial><mass>0.2</mass><inertia><ixx>0.00014</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.00014</iyy><iyz>0</iyz><izz>0.00025</izz></inertia></inertial><collision name="c"><geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry></visual></link>
+      <joint name="front_right_wheel_joint" type="revolute"><parent>base_link</parent><child>front_right_wheel</child><axis><xyz>0 0 1</xyz></axis></joint>
+
+      <link name="rear_left_wheel"><pose>-0.12 0.13 0.04 -1.5708 0 0</pose><inertial><mass>0.2</mass><inertia><ixx>0.00014</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.00014</iyy><iyz>0</iyz><izz>0.00025</izz></inertia></inertial><collision name="c"><geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry></visual></link>
+      <joint name="rear_left_wheel_joint" type="revolute"><parent>base_link</parent><child>rear_left_wheel</child><axis><xyz>0 0 1</xyz></axis></joint>
+
+      <link name="rear_right_wheel"><pose>-0.12 -0.13 0.04 -1.5708 0 0</pose><inertial><mass>0.2</mass><inertia><ixx>0.00014</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.00014</iyy><iyz>0</iyz><izz>0.00025</izz></inertia></inertial><collision name="c"><geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry></collision><visual name="v"><geometry><cylinder><radius>0.05</radius><length>0.03</length></cylinder></geometry></visual></link>
+      <joint name="rear_right_wheel_joint" type="revolute"><parent>base_link</parent><child>rear_right_wheel</child><axis><xyz>0 0 1</xyz></axis></joint>
+
+      <plugin filename="ignition-gazebo-diff-drive-system" name="ignition::gazebo::systems::DiffDrive">
+        <left_joint>front_left_wheel_joint</left_joint>
+        <left_joint>rear_left_wheel_joint</left_joint>
+        <right_joint>front_right_wheel_joint</right_joint>
+        <right_joint>rear_right_wheel_joint</right_joint>
+        <wheel_separation>0.26</wheel_separation>
+        <wheel_radius>0.05</wheel_radius>
+        <max_wheel_torque>60</max_wheel_torque>
+        <max_wheel_acceleration>6.0</max_wheel_acceleration>
+        <topic>/cmd_vel</topic>
+        <odom_topic>/odom</odom_topic>
+        <tf_topic>/tf</tf_topic>
+        <frame_id>odom</frame_id>
+        <child_frame_id>base_footprint</child_frame_id>
+      </plugin>
+    </model>
+  </world>
+</sdf>

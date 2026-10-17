@@ -1,46 +1,52 @@
-#!/usr/bin/env bash
-set -euo pipefail
-project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
-export GZ_PARTITION="${GZ_PARTITION:-kirillka_aruco_marker}"
-resource_path="$project_dir/models"
-gui_plugin_path="$project_dir/build/live_transform_control"
-if [[ -n "${GZ_SIM_RESOURCE_PATH:-}" ]]; then
-  resource_path="$resource_path:$GZ_SIM_RESOURCE_PATH"
-fi
-if command -v gz >/dev/null 2>&1; then
-  export GZ_GUI_PLUGIN_PATH="$gui_plugin_path${GZ_GUI_PLUGIN_PATH:+:$GZ_GUI_PLUGIN_PATH}"
-  gz_command=(gz)
-  sim_version=()
-  detector_command=()
-elif command -v distrobox-enter >/dev/null 2>&1; then
-  gz_command=(distrobox-enter -n ubuntu-1 -- env GZ_PARTITION="$GZ_PARTITION" GZ_SIM_RESOURCE_PATH="$resource_path" GZ_GUI_PLUGIN_PATH="$gui_plugin_path" QT_QPA_PLATFORM=xcb gz)
-  detector_command=(distrobox-enter -n ubuntu-1 -- env GZ_PARTITION="$GZ_PARTITION" GZ_SIM_RESOURCE_PATH="$resource_path" "$project_dir/.venv/bin/python" "$project_dir/detect_aruco.py")
-  sim_version=(--force-version 8)
-else
-  echo 'Для запуска нужен Gazebo Sim (gz sim) или контейнер ubuntu-1 с Gazebo Sim 8.' >&2
-  exit 1
-fi
+#!/bin/bash
+# Завершаем только старые узлы симуляции, не задевая сам скрипт
+killall -9 ign rviz2 2>/dev/null
+pkill -9 -f "mission_control.py" 2>/dev/null
+pkill -9 -f "navigation_launch.py" 2>/dev/null
+pkill -9 -f "online_async_launch.py" 2>/dev/null
+pkill -9 -f "ros_ign_bridge" 2>/dev/null
+pkill -9 -f "robot_state_publisher" 2>/dev/null
+sleep 1
 
-if [[ ${#detector_command[@]} -gt 0 ]]; then
-  if [[ ! -x "$project_dir/.venv/bin/python" ]]; then
-    echo 'Не найдена .venv. Создайте её и установите зависимости из requirements.txt.' >&2
-    exit 1
-  fi
-  distrobox-enter -n ubuntu-1 -- cmake \
-    -S "$project_dir/live_transform_control" \
-    -B "$gui_plugin_path" \
-    -DCMAKE_BUILD_TYPE=Release
-  distrobox-enter -n ubuntu-1 -- cmake --build "$gui_plugin_path" -j2
-  "${detector_command[@]}" >> "$project_dir/aruco_detector.log" 2>&1 &
-  detector_pid=$!
-  cleanup_detector() {
-    kill "$detector_pid" 2>/dev/null || true
-    wait "$detector_pid" 2>/dev/null || true
-  }
-  trap cleanup_detector EXIT INT TERM
-fi
+source /opt/ros/humble/setup.bash
+source ~/ign_bot_ws/install/setup.bash
 
-set +e
-"${gz_command[@]}" sim "${sim_version[@]}" -r "$project_dir/camera_dancer.sdf" "$@"
-sim_status=$?
-exit "$sim_status"
+echo "=== 1. Запуск Ignition Gazebo 6 ==="
+ign gazebo -r ~/ign_bot_ws/src/my_ign_bot/worlds/obstacles.sdf &
+sleep 5
+
+echo "=== 2. Мост и публикация модели ==="
+ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(cat ~/ign_bot_ws/src/my_ign_bot/urdf/robot.urdf)" -p use_sim_time:=true &
+ros2 run ros_ign_bridge parameter_bridge \
+  /scan@sensor_msgs/msg/LaserScan[ignition.msgs.LaserScan \
+  /cmd_vel@geometry_msgs/msg/Twist]ignition.msgs.Twist \
+  /odom@nav_msgs/msg/Odometry[ignition.msgs.Odometry \
+  /tf@tf2_msgs/msg/TFMessage[ignition.msgs.Pose_V \
+  /clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock &
+
+sleep 2
+ros2 run tf2_ros static_transform_publisher --frame-id laser_frame --child-frame-id "low_poly_bot/base_footprint/lidar" &
+ros2 run tf2_ros static_transform_publisher --frame-id laser_frame --child-frame-id "low_poly_bot/laser_frame/lidar" &
+
+echo "=== 3. Запуск SLAM ==="
+ros2 launch slam_toolbox online_async_launch.py use_sim_time:=True &
+sleep 4
+
+echo "=== 4. Запуск Nav2 ==="
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=True &
+sleep 4
+
+# Тюнинг скорости и безопасности
+ros2 param set /controller_server FollowPath.max_vel_x 1.2 2>/dev/null
+ros2 param set /controller_server FollowPath.max_vel_theta 2.2 2>/dev/null
+ros2 param set /controller_server FollowPath.acc_lim_x 2.5 2>/dev/null
+ros2 param set /local_costmap/local_costmap inflation_layer.inflation_radius 0.60 2>/dev/null
+ros2 param set /global_costmap/global_costmap inflation_layer.inflation_radius 0.60 2>/dev/null
+
+echo "=== 5. RViz2 и Панель кнопок ==="
+ros2 launch nav2_bringup rviz_launch.py &
+sleep 2
+
+python3 ~/ign_bot_ws/mission_control.py
+
+kill $(jobs -p) 2>/dev/null

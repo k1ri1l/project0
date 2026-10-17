@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_ign_bot</name>
+  <version>0.0.1</version>
+  <description>Low poly autonomous bot</description>
+  <maintainer email="user@todo.todo">user</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

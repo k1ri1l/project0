@@ -1,0 +1,3 @@
+# OpenCV, NumPy, SciPy, and Pillow are installed with apt on Raspberry Pi OS.
+imutils
+pytesseract
